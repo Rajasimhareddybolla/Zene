@@ -1,6 +1,5 @@
 {
   "name": "upsc_query_schema",
-  "strict": True,
   "schema": {
     "type": "object",
     "properties": {
@@ -32,36 +31,40 @@
       },
       "query_category": {
         "type": "string",
-        "description": "One of the specified types related to the query.",
         "enum": [
           "chat",
           "question",
           "concept"
-        ]
+        ],
+        "description": "Specifies the category of the user's query."
       },
       "target": {
         "type": "string",
-        "description": "Identify the target of the user query.",
         "enum": [
           "agent",
           "exam",
           "curriculum",
           "user",
           "other"
-        ]
+        ],
+        "description": "Identifies the target of the user query."
       },
       "is_in_upsc_scope": {
         "type": "boolean",
         "description": "Indicates if the query is within the UPSC examination scope."
       },
+      "is_topic_switched": {
+        "type": "boolean",
+        "description": "Indicates if the topic/sub-topic/theme changed from the previous query."
+      },
       "next_agent": {
         "type": "string",
-        "description": "Pick one of the specified agents.",
         "enum": [
           "Comet",
           "Thalia",
           "Milo"
-        ]
+        ],
+        "description": "Selects the next agent to handle the query."
       },
       "vector_database_retrieval_queries": {
         "type": "array",
@@ -80,9 +83,11 @@
       "query_category",
       "target",
       "is_in_upsc_scope",
+      "is_topic_switched",
       "next_agent",
       "vector_database_retrieval_queries"
     ],
     "additionalProperties": False
-  }
-}  
+  },
+  "strict": True
+}
