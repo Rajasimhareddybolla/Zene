@@ -53,17 +53,11 @@ class SnowBlaze:
         # Initialize conversations for different agent types
         self.conversations = {
             "zene": [],
-            "commet": [],
-            "finn": [],
-            "milo": [],
-            "thalia": []
+            "commet": []
         }
         self.output_histories = {
             "zene": [],
-            "commet": [],
-            "finn": [],
-            "milo": [],
-            "thalia": []
+            "commet": []
         }
         
         # Agent configurations
@@ -72,7 +66,6 @@ class SnowBlaze:
         self.commet = Commet
         self.finn = Finn
         self.milo = Milo
-        self.thalia = Thalia
         
         # Set up database connection
         if db_url is None:
@@ -310,27 +303,17 @@ class SnowBlaze:
                 json.dump(messages, f, indent=2)
             
             start_time = time.time()
-            if model_name == "o3-mini":
-                response = self.client.chat.completions.create(
+            
+            response = self.client.chat.completions.create(
                 model=model_name,
                 messages=messages,
-
+                temperature=0.0,
                 response_format={
                     "type": "json_schema",
                     "json_schema": response_format
                 },
             )
-            else:
-                response = self.client.chat.completions.create(
-                    model=model_name,
-                    messages=messages,
-                    temperature=0.0,
-                    response_format={
-                        "type": "json_schema",
-                        "json_schema": response_format
-                    },
-                )
-                
+            
             end_time = time.time()
             latency = end_time - start_time
             
@@ -434,7 +417,7 @@ class SnowBlaze:
             if "vector_database_retrieval_queries" in zene_response:
                 quiries = zene_response["vector_database_retrieval_queries"]
                 
-                for query in quiries[:1]:
+                for query in quiries:
                     # Perform vector database retrieval here
                     res = self.get_agent_response("finn",query )
                     try:
@@ -453,13 +436,12 @@ class SnowBlaze:
                 # Extract user intent if available
                 user_intent = zene_response.get("user_intent", "")
                 
-                # Create augmented message with Finn's content
-                augmented_message = f"{message}\nFinn's content -> {str(rag_responses)}"
-                
-                # Get response from Milo agent
+                # Get response from Milo age
+                #nt
+                message += f"<rag> content {str(rag_responses)} </rag>"
                 milo_response_str = self.get_agent_response(
                     "milo", 
-                    augmented_message,
+                    message,
                     user_intent=user_intent
                 )
                 
@@ -476,23 +458,23 @@ class SnowBlaze:
                 # Extract user intent if available
                 user_intent = zene_response.get("user_intent", "")
                 
-                # Create augmented message with Finn's content
-                augmented_message = f"{message}\nFinn's content -> {str(rag_responses)}"
-                
-                # Get response from Thalia agent
-                thalia_response_str = self.get_agent_response(
+                # Get response from Milo age
+                #nt
+                message += f"<rag> content {str(rag_responses)} </rag>"
+                thalia_response = self.get_agent_response(
                     "thalia", 
-                    augmented_message,
-                    user_intent=user_intent,
-                    model_name= "o3-mini"
+                    message,
+                    user_intent=user_intent
                 )
                 
                 try:
-                    thalia_response = json.loads(thalia_response_str)
+                    thalia_response = json.loads(thalia_response)
                     return thalia_response
                 except json.JSONDecodeError as e:
-                    logger.error(f"Failed to parse Thalia response: {e}")
-                    return {"error": f"Failed to parse Thalia response: {str(e)}"}
+                    logger.error(f"Failed to parse Milo response: {e}")
+                    return {"error": f"Failed to parse Milo response: {str(e)}"}
+            # If no routing needed, return Zene response
+            return zene_response
         ## obj1 = Snowblaze(user_id="user123")
         ## res = obj1("user_query")
         except json.JSONDecodeError as e:
@@ -508,13 +490,7 @@ class SnowBlaze:
             filename: Optional filename to save to
         """
         # Determine which agent types to save
-        if agent_type == "all":
-            agent_types = list(self.conversations.keys())
-        elif agent_type.lower() in self.conversations:
-            agent_types = [agent_type.lower()]
-        else:
-            logger.error(f"Unknown agent type: {agent_type}")
-            return
+        agent_types = list(self.conversations.keys()) if agent_type == "all" else [agent_type.lower()]
         
         # Save each agent type conversation
         for agent in agent_types:
@@ -561,7 +537,7 @@ class SnowBlaze:
                         self.conversations[agent] = []
                         self.output_histories[agent] = []
                     logger.info(f"Deleted all conversations for user {self.user_id} from database")
-                elif agent_type.lower() in self.conversations:
+                else:
                     agent_type = agent_type.lower()
                     session.query(ConversationData).filter_by(
                         user_id=self.user_id, 
@@ -571,9 +547,6 @@ class SnowBlaze:
                     self.conversations[agent_type] = []
                     self.output_histories[agent_type] = []
                     logger.info(f"Deleted {agent_type} conversation for user {self.user_id} from database")
-                else:
-                    logger.error(f"Unknown agent type: {agent_type}")
-                    return False
                 return True
         except Exception as e:
             logger.error(f"Error deleting conversation: {e}", exc_info=True)

@@ -115,58 +115,40 @@ with col1:
                     # Use the __call__ method to handle the entire agent workflow
                     full_response = st.session_state.conversation_agent(user_input)
                     
-                    # Store the full response in session state for display
-                    if 'full_call_response' not in st.session_state:
-                        st.session_state.full_call_response = {}
-                    st.session_state.full_call_response = full_response
-                    
                     # Get information about which agents were used
                     agents_used = []
                     
                     # Check output histories to see which agents were used
                     for agent_type in ["zene", "commet", "finn", "milo", "thalia"]:
-                        try:
-                            history = st.session_state.conversation_agent.output_histories.get(agent_type, [])
-                            if history and len(history) > 0 and history[-1].get("query") == user_input:
-                                agents_used.append(agent_type)
-                                agent_output = history[-1]
-                                processing_time = agent_output.get("latency_seconds", 0)
-                                
-                                # Extract response content for this agent
-                                response_content = None
-                                try:
-                                    if "response" in agent_output:
-                                        # First try to parse as JSON if it's a string
-                                        if isinstance(agent_output["response"], str):
-                                            try:
-                                                response_content = json.loads(agent_output["response"])
-                                            except json.JSONDecodeError:
-                                                response_content = agent_output["response"]
-                                        else:
-                                            # If it's already a dict or other object
-                                            response_content = agent_output["response"]
-                                    else:
-                                        response_content = agent_output.get("response", {})
-                                except Exception as e:
-                                    logger.error(f"Error processing response content for {agent_type}: {str(e)}")
-                                    response_content = f"Error: {str(e)}"
-                                
-                                # Add to chat history
-                                st.session_state.chat_history.append({
-                                    "role": "assistant",
-                                    "agent_type": agent_type,
-                                    "content": response_content,
-                                    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                                    "usage": agent_output.get("usage", {}),
-                                    "processing_time": processing_time,
-                                    "raw_output": agent_output,
-                                    "routed_from": "auto_flow"  # Mark as part of auto flow
-                                })
-                        except Exception as e:
-                            logger.error(f"Error processing output for {agent_type}: {str(e)}")
-                            st.error(f"Error processing {agent_type} agent: {str(e)}")
+                        history = st.session_state.conversation_agent.output_histories[agent_type]
+                        if history and history[-1].get("query") == user_input:
+                            agents_used.append(agent_type)
+                            agent_output = history[-1]
+                            processing_time = agent_output.get("latency_seconds", 0)
+                            
+                            # Extract response content for this agent
+                            response_content = None
+                            try:
+                                if "response" in agent_output:
+                                    response_content = json.loads(agent_output["response"])
+                                else:
+                                    response_content = agent_output.get("response", {})
+                            except:
+                                response_content = agent_output.get("response", "")
+                            
+                            # Add to chat history
+                            st.session_state.chat_history.append({
+                                "role": "assistant",
+                                "agent_type": agent_type,
+                                "content": response_content,
+                                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                                "usage": agent_output.get("usage", {}),
+                                "processing_time": processing_time,
+                                "raw_output": agent_output,
+                                "routed_from": "auto_flow"  # Mark as part of auto flow
+                            })
                     
-                    # If no agents were tracked, add the final response
+                    # If no agents were tracked (unlikely), add the final response
                     if not agents_used:
                         st.session_state.chat_history.append({
                             "role": "assistant",
@@ -175,8 +157,9 @@ with col1:
                             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                             "usage": {},
                             "processing_time": time.time() - start_time,
-                            "raw_output": full_response
+                            "raw_output": {}
                         })
+                    
                 else:
                     # Use a specific agent
                     response_str = st.session_state.conversation_agent.get_agent_response(
@@ -410,7 +393,7 @@ with col1:
 
 with col2:
     # Create tabs for different details
-    tabs = st.tabs(["Token Usage", "Response Analysis", "Call Response", "Settings"])
+    tabs = st.tabs(["Token Usage", "Response Analysis", "Settings"])
     
     # Token Usage Tab
     with tabs[0]:
@@ -634,25 +617,8 @@ with col2:
         else:
             st.info("No responses to analyze yet. Start a conversation to see analysis.")
     
-    # Add Call Response Tab
+    # Settings Tab
     with tabs[2]:
-        st.header("__call__ Method Response")
-        
-        if 'full_call_response' in st.session_state and st.session_state.full_call_response:
-            st.subheader("Raw Response from __call__ Method")
-            st.json(st.session_state.full_call_response)
-            
-            # Check if specific agent responses exist in the full response
-            if isinstance(st.session_state.full_call_response, dict):
-                for agent_type in ["finn", "milo", "thalia"]:
-                    if agent_type in st.session_state.full_call_response:
-                        st.subheader(f"{agent_type.capitalize()} Agent Response")
-                        st.json(st.session_state.full_call_response[agent_type])
-        else:
-            st.info("No call response available yet. Start a conversation in auto mode to see the raw response.")
-    
-    # Settings Tab (now tab 3)
-    with tabs[3]:
         st.header("Settings")
         
         # User ID settings
@@ -741,15 +707,3 @@ with col2:
 # Add footer
 st.markdown("---")
 st.markdown("SnowBlaze AI Assistant © 2023 | Powered by OpenAI")
-
-# Add debugging section at the bottom of the app
-st.expander("Debug Information", expanded=False).write("""
-This section shows debugging information about agent interactions.
-
-### Common Issues:
-1. If finn, milo, or thalia agents aren't working, check their output in the "Call Response" tab
-2. Verify that the responses are proper JSON format
-3. Check that the model being used is appropriate for each agent
-
-For detailed logs, check the console where this Streamlit app is running.
-""")
