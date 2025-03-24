@@ -1,0 +1,194 @@
+{
+  "user_id": "user_00",
+  "timestamp": "2025-03-22T12:49:14.153872",
+  "query": "95. Consider the following pairs with regard\nto sports awards :\n1. Major Dhyan Chand: For the most\nKhel Ratna Award spectacular and\noutstanding per-\nformance by a\nsportsperson over\nperiod of last four\nyears\n2. Arjuna Award : For the lifetime\nachievement by\na sportsperson\n3. Dronacharya Award: To honour eminent\ncoaches who have\nsuccessfully trained\nsportspersons or\nteams\n4. Rashtriya Khel : To recognize the\nProtsahan Puraskar contribution made\nby sportspersons\neven after their\nretirement\nHow many of the above pairs are\ncorrectly matched?\n(a) Only one\n(b) Only two\n(c) Only three\n(d) All four",
+  "response": {
+    "solution_notes": {
+      "summary": "The problem requires evaluating the matching of sports awards with their respective descriptions. By comparing the actual criteria and purpose of each award with the statement provided in each pair, it is found that Pair 1 and Pair 3 are correctly matched. The Major Dhyan Chand Khel Ratna Award is correctly described as recognizing spectacular and outstanding performance over a period of four years. The Dronacharya Award is accurately described as honoring eminent coaches who have successfully trained sportspersons or teams. In contrast, the Arjuna Award is meant to recognize consistent outstanding performance and not a lifetime achievement, and the Rashtriya Khel Protsahan Puraskar is awarded for promoting sports (usually to institutions or organizations) rather than honoring contributions made by sportspersons after retirement. Consequently, only two of the four pairs are correctly matched.",
+      "answer_options_provided": [
+        "(a) Only one",
+        "(b) Only two",
+        "(c) Only three",
+        "(d) All four"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Analysis of Major Dhyan Chand Khel Ratna Award (Pair 1)",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "The Major Dhyan Chand Khel Ratna Award is India's highest sporting honor, established to recognize spectacular and outstanding performance by a sportsperson over the previous four years.",
+              "tags": [
+                "Major Dhyan Chand",
+                "Khel Ratna Award",
+                "outstanding performance",
+                "four years"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "The award, named after the legendary hockey player Major Dhyan Chand, is specifically based on performance over a period rather than lifetime achievement.",
+              "tags": [
+                "legendary",
+                "hockey",
+                "performance period"
+              ],
+              "references": [
+                {
+                  "current_tag": "Khel Ratna Award",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "outstanding performance",
+                    "four years"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Title slide with bullet points outlining the award's purpose, eligibility period (four years), and its association with Major Dhyan Chand.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the criteria and significance of the Major Dhyan Chand Khel Ratna Award."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Analysis of Arjuna Award (Pair 2)",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "The Arjuna Award is designed to recognize consistent outstanding performance by sportspersons, and is not intended as a lifetime achievement award.",
+              "tags": [
+                "Arjuna Award",
+                "consistent performance",
+                "not lifetime achievement"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "The description in the pair incorrectly labels the Arjuna Award as being for lifetime achievement, which is actually the purview of the Dhyan Chand Award.",
+              "tags": [
+                "mis-match",
+                "lifetime achievement",
+                "Dhyan Chand Award"
+              ],
+              "references": [
+                {
+                  "current_tag": "lifetime achievement",
+                  "other_content_sequential_id": "2.1",
+                  "other_content_tags": [
+                    "Arjuna Award",
+                    "consistent performance"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Bullet points contrasting the actual purpose of the Arjuna Award with the mis-described lifetime achievement component.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Differentiating between awards based on consistent performance and those for lifetime achievement."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Analysis of Dronacharya Award (Pair 3)",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "The Dronacharya Award is conferred to honor eminent coaches who have successfully trained sportspersons or teams, which aligns perfectly with the description given.",
+              "tags": [
+                "Dronacharya Award",
+                "coaches",
+                "training",
+                "correct match"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "A clear slide with a focus on the role of the award and bullet points summarizing successful coaching achievements.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Knowledge of the purpose and criteria of the Dronacharya Award."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 4,
+          "title": "Analysis of Rashtriya Khel Protsahan Puraskar (Pair 4)",
+          "content": [
+            {
+              "content_sequential_id": "4.1",
+              "text": "The Rashtriya Khel Protsahan Puraskar is meant to recognize contributions towards sports promotion, typically awarded to organizations or institutions, and not for honoring sportspersons for their contributions after retirement.",
+              "tags": [
+                "Rashtriya Khel Protsahan Puraskar",
+                "sports promotion",
+                "organizations",
+                "incorrect match"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "4.2",
+              "text": "Thus, pairing this award with recognizing contributions made by sportspersons post-retirement is inaccurate.",
+              "tags": [
+                "post-retirement",
+                "wrong description"
+              ],
+              "references": [
+                {
+                  "current_tag": "incorrect match",
+                  "other_content_sequential_id": "4.1",
+                  "other_content_tags": [
+                    "Rashtriya Khel Protsahan Puraskar",
+                    "sports promotion"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "A comparison slide displaying the intended purpose of the Rashtriya Khel Protsahan Puraskar versus the incorrectly stated purpose in the pair.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "4.Q1",
+              "concept_to_be_assessed": "Understanding the actual beneficiary and purpose of the Rashtriya Khel Protsahan Puraskar."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(b) Only two"
+        ],
+        "correct_answer_descriptions": [
+          "Only Pair 1 (Major Dhyan Chand Khel Ratna Award) and Pair 3 (Dronacharya Award) are correctly matched. The Arjuna Award is not for lifetime achievement, and the Rashtriya Khel Protsahan Puraskar does not recognize contributions of sportspersons post-retirement."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "Supporting content on Major Dhyan Chand Khel Ratna Award",
+          "Ministry of Youth Affairs and Sports publications",
+          "Standard descriptions of Indian sports awards"
+        ],
+        "accuracy_proof": [
+          "Pair 1 is verified by the description that the award is for exceptional performance over the last four years.",
+          "The Arjuna Award is known to recognize consistent outstanding performance, not a lifetime contribution.",
+          "The Dronacharya Award is correctly matched as it honors coaches for successful sports training.",
+          "The Rashtriya Khel Protsahan Puraskar is intended for organizations promoting sports, not for retired sportspersons."
+        ],
+        "missing_content": [
+          "Additional details on the Dhyan Chand Award (lifetime achievement award) could further clarify the distinction from the Arjuna Award."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

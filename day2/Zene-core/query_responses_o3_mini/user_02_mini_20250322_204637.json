@@ -1,0 +1,173 @@
+{
+  "user_id": "user_02_mini",
+  "timestamp": "2025-03-22T20:46:37.776140",
+  "query": "76. Consider the following statements:\nStatement-I :\nAccording to the United Nations'\nWorld Water Development Report,\n2022', India extracts more than\na quarter of the world's groundwater\nwithdrawal each year.\nStatement-II:\nIndia needs to extract more than\na quarter of the world's groundwater\neach year to satisfy the drinking water\nand sanitation needs of almost 18%\nof world's population living in its\nterritory.\nWhich one of the following is correct in\nrespect of the above statements?\n(a) Both Statement-I and Statement-II\nare correct and Statement-II is the\ncorrect explanation for Statement-I\n(b) Both Statement-I and Statement-II\nare correct and Statement-II is\nnot the correct explanation for\nStatement-I\n(c) Statement-I is correct but\nStatement-II is incorrect\n(d) Statement-I is incorrect but\nStatement-II is correct",
+  "response": {
+    "solution_notes": {
+      "summary": "The analysis shows that Statement-I is correct since the World Water Development Report 2022 confirms that India extracts approximately 25% of the world\u2019s groundwater, which is interpreted here as 'more than a quarter'. However, Statement-II is incorrect because attributing the high extraction solely to the drinking water and sanitation needs of 18% of the world\u2019s population is misleading; India\u2019s groundwater is used extensively for irrigation and other purposes as well. Thus, the correct answer is option (c) \u2013 Statement-I is correct but Statement-II is incorrect.",
+      "answer_options_provided": [
+        "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+        "(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+        "(c) Statement-I is correct but Statement-II is incorrect",
+        "(d) Statement-I is incorrect but Statement-II is correct"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Analysis of Statement-I: Groundwater Extraction in India",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "According to the World Water Development Report 2022, India extracts about 251 billion cubic meters of groundwater annually, which amounts to roughly 25% of the global total.",
+              "tags": [
+                "World Water Development Report 2022",
+                "251 billion cubic meters",
+                "25% extraction",
+                "global groundwater"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "This makes India the largest consumer of groundwater in the world, thereby validating Statement-I that India extracts more than a quarter of the world's groundwater.",
+              "tags": [
+                "largest consumer",
+                "groundwater extraction",
+                "India",
+                "validation"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide with bullet points: start with the report\u2019s key statistic (251 billion cubic meters, 25% extraction) and emphasize India\u2019s position as the largest consumer of groundwater.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the statistical basis and significance of India's groundwater extraction as per the World Water Development Report 2022."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Evaluation of Statement-II: Justification Based on Population Needs",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement-II asserts that India needs to extract more than a quarter of the world's groundwater to satisfy the drinking water and sanitation needs of nearly 18% of the world's population residing within its territory.",
+              "tags": [
+                "Statement-II",
+                "drinking water",
+                "sanitation",
+                "18% population",
+                "need justification"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "While it is true that about 18% of the world's population lives in India, the high rate of groundwater extraction is not solely due to drinking water and sanitation needs but also largely because of extensive agricultural irrigation and other uses.",
+              "tags": [
+                "population share",
+                "agricultural irrigation",
+                "multiple uses",
+                "groundwater demand"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Thus, linking the extraction exclusively to the needs of 18% of the global population ignores the crucial role of agriculture and other sectors, making Statement-II incorrect.",
+              "tags": [
+                "misinterpretation",
+                "extraction driver",
+                "inadequate explanation",
+                "Statement-II incorrect"
+              ],
+              "references": [
+                {
+                  "current_tag": "World Water Development Report 2022",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "251 billion cubic meters",
+                    "25% extraction"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Bullet point slide comparing the population figure (18%) with the multiple demands on groundwater (drinking water, sanitation, irrigation), highlighting why the extraction rate cannot be justified solely on the basis of population needs.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Differentiating between population-based water needs and the broader demands driving groundwater extraction in India."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Final Comparison and Answer",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Considering the analyses, Statement-I is correct based on the statistical data, whereas Statement-II is flawed because it oversimplifies the reasons behind India's high groundwater extraction.",
+              "tags": [
+                "final comparison",
+                "statement evaluation",
+                "correctness",
+                "final answer"
+              ],
+              "references": [
+                {
+                  "current_tag": "Statement-I",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "World Water Development Report 2022",
+                    "25% extraction"
+                  ]
+                },
+                {
+                  "current_tag": "Statement-II",
+                  "other_content_sequential_id": "2.3",
+                  "other_content_tags": [
+                    "misinterpretation",
+                    "inadequate explanation"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Summary slide emphasizing the conclusion: Statement-I is correct; Statement-II is incorrect, with a clear statement of the reasons.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Ability to critically evaluate and contrast factual data with misleading explanations regarding resource extraction."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(c) Statement-I is correct but Statement-II is incorrect"
+        ],
+        "correct_answer_descriptions": [
+          "The World Water Development Report 2022 confirms that India extracts about 25% of the world\u2019s groundwater, validating Statement-I. However, attributing this extraction solely to meet drinking water and sanitation needs for 18% of the world\u2019s population is oversimplified since agriculture and other sectors are major drivers, making Statement-II incorrect."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "World Water Development Report 2022",
+          "India's National Water Policy",
+          "Ministry of Jal Shakti reports"
+        ],
+        "accuracy_proof": [
+          "Data from the report confirm that India\u2019s groundwater extraction is around 251 billion cubic meters, roughly 25% of the global total.",
+          "The rationale for extraction involves extensive irrigation needs and other usages, not just drinking water and sanitation."
+        ],
+        "missing_content": [
+          "Detailed sector-wise breakdown of groundwater usage beyond the extraction statistic."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

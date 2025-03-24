@@ -1,0 +1,314 @@
+{
+  "user_id": "user_01_gemini",
+  "timestamp": "2025-03-22T20:38:41.197542",
+  "query": "90. Consider the following statements :\n1. Recently, all the countries of the\nUnited Nations have adopted the\nfirst-ever compact for international\nmigration, the 'Global Compact\nfor Safe, Orderly and Regular\nMigration (GCM)'.\n2. The objectives and commitments.\nstated in the GCM are binding on\nthe UN member countries.\n3. The GCM addresses internal\nmigration or internally displaced\npeople also in its objectives and\ncommitments.\nHow many of the above statements are\ncorrect?\n(a) Only one\n(b) Only two\n(c) All three\n(d) None",
+  "response": {
+    "solution_notes": {
+      "summary": "The question asks to evaluate the correctness of three statements regarding the Global Compact for Safe, Orderly and Regular Migration (GCM). The GCM is the first international compact on migration adopted by the UN, but not all countries have adopted it. Also, the objectives and commitments are non-binding. The GCM does not address internal migration.",
+      "answer_options_provided": [
+        "(a) Only one",
+        "(b) Only two",
+        "(c) All three",
+        "(d) None"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Overview of the Global Compact for Migration (GCM)",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "The Global Compact for Safe, Orderly and Regular Migration (GCM) is the first comprehensive international agreement on migration.",
+              "tags": [
+                "Global Compact for Migration",
+                "international agreement",
+                "migration"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "It was adopted on December 10, 2018, at an intergovernmental conference in Marrakech, Morocco.",
+              "tags": [
+                "adoption",
+                "December 10, 2018",
+                "Marrakech",
+                "Morocco"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.3",
+              "text": "The GCM is not legally binding; it is a cooperative framework.",
+              "tags": [
+                "non-binding",
+                "cooperative framework"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.4",
+              "text": "The New York Declaration for Refugees and Migrants in September 2016 paved the way for the GCM.",
+              "tags": [
+                "New York Declaration",
+                "Refugees and Migrants",
+                "September 2016"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide with key points about the GCM\u2019s background and purpose.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the background, purpose, and legal status of the Global Compact for Migration."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Adoption and Endorsement by UN Member States",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "The GCM was endorsed by the UN General Assembly on December 19, 2018, with 152 countries voting in favor.",
+              "tags": [
+                "UN General Assembly",
+                "endorsement",
+                "December 19, 2018",
+                "152 countries"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "Five countries voted against the compact: the United States, Hungary, Israel, Poland, and the Czech Republic.",
+              "tags": [
+                "countries against",
+                "United States",
+                "Hungary",
+                "Israel",
+                "Poland",
+                "Czech Republic"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Twelve countries abstained from voting.",
+              "tags": [
+                "abstentions",
+                "12 countries"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.4",
+              "text": "Therefore, not all countries of the United Nations have adopted the GCM.",
+              "tags": [
+                "not all countries",
+                "UN",
+                "adoption"
+              ],
+              "references": [
+                {
+                  "current_tag": "not all countries",
+                  "other_content_sequential_id": "2.1",
+                  "other_content_tags": [
+                    "UN General Assembly",
+                    "endorsement",
+                    "December 19, 2018",
+                    "152 countries"
+                  ]
+                },
+                {
+                  "current_tag": "not all countries",
+                  "other_content_sequential_id": "2.2",
+                  "other_content_tags": [
+                    "countries against",
+                    "United States",
+                    "Hungary",
+                    "Israel",
+                    "Poland",
+                    "Czech Republic"
+                  ]
+                },
+                {
+                  "current_tag": "not all countries",
+                  "other_content_sequential_id": "2.3",
+                  "other_content_tags": [
+                    "abstentions",
+                    "12 countries"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "List the countries that voted for, against, and abstained from the GCM.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Understanding which countries supported, opposed, or abstained from the GCM."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Objectives, Commitments, and Scope of the GCM",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "The GCM outlines 23 objectives to improve migration management.",
+              "tags": [
+                "23 objectives",
+                "migration management"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "These objectives aim to minimize adverse drivers of migration, protect migrants' rights, and enhance pathways for regular migration.",
+              "tags": [
+                "minimize adverse drivers",
+                "migrants' rights",
+                "regular migration"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.3",
+              "text": "The commitments in the GCM are not legally binding on UN member countries.",
+              "tags": [
+                "non-binding",
+                "UN member countries"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.4",
+              "text": "The GCM focuses on international migration and does not address internal migration or internally displaced people.",
+              "tags": [
+                "international migration",
+                "no internal migration",
+                "no internally displaced people"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Explain the objectives, commitments, and the scope (international vs. internal migration) of the GCM.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Distinguishing the GCM's focus on international migration and its non-binding commitments."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 4,
+          "title": "Analysis of the Statements",
+          "content": [
+            {
+              "content_sequential_id": "4.1",
+              "text": "Statement 1 is incorrect because not all UN countries adopted the GCM.",
+              "tags": [
+                "Statement 1",
+                "incorrect",
+                "not all adopted"
+              ],
+              "references": [
+                {
+                  "current_tag": "not all adopted",
+                  "other_content_sequential_id": "2.4",
+                  "other_content_tags": [
+                    "not all countries",
+                    "UN",
+                    "adoption"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "4.2",
+              "text": "Statement 2 is incorrect because the GCM's objectives and commitments are non-binding.",
+              "tags": [
+                "Statement 2",
+                "incorrect",
+                "non-binding"
+              ],
+              "references": [
+                {
+                  "current_tag": "non-binding",
+                  "other_content_sequential_id": "3.3",
+                  "other_content_tags": [
+                    "non-binding",
+                    "UN member countries"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "4.3",
+              "text": "Statement 3 is incorrect because the GCM does not address internal migration.",
+              "tags": [
+                "Statement 3",
+                "incorrect",
+                "no internal migration"
+              ],
+              "references": [
+                {
+                  "current_tag": "no internal migration",
+                  "other_content_sequential_id": "3.4",
+                  "other_content_tags": [
+                    "international migration",
+                    "no internal migration",
+                    "no internally displaced people"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "4.4",
+              "text": "Therefore, none of the statements are correct.",
+              "tags": [
+                "conclusion",
+                "none correct"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Analyze each statement and conclude whether it's correct or incorrect based on the GCM details.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "4.Q1",
+              "concept_to_be_assessed": "Evaluating the correctness of given statements based on the understanding of the GCM."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(d) None"
+        ],
+        "correct_answer_descriptions": [
+          "None of the provided statements accurately describe the Global Compact for Migration."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "UN official documents on the Global Compact for Migration",
+          "Reports from the International Organization for Migration (IOM)",
+          "UN General Assembly Resolutions related to migration"
+        ],
+        "accuracy_proof": [
+          "Statement 1: The UN documentation shows that not all member states adopted the GCM, as some voted against or abstained.",
+          "Statement 2: The GCM is explicitly defined as a non-binding, cooperative framework.",
+          "Statement 3: The GCM's scope is limited to international migration, as stated in its objectives and principles."
+        ],
+        "missing_content": [
+          "Specific national action plans developed by countries to implement the GCM's objectives are not covered."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "user_id": "user_02_mini",
+  "timestamp": "2025-03-22T20:42:56.560281",
+  "query": "77. Consider the following statements :\n1. According to the Constitution of\nIndia, the Central Government has\na duty to protect States from\ninternal disturbances.\n2. The Constitution of India exempts\nthe States from providing legal\ncounsel to a person being held for\npreventive detention.\n3. According to the Prevention of\nTerrorism Act, 2002, confession of\nthe accused before the police\ncannot be used as evidence.\nHow many of the above statements are\ncorrect?\n(a) Only one\n(b) Only two\n(c) All three\n(d) None",
+  "response": {
+    "solution_notes": {
+      "summary": "The evaluation of the statements is done by analyzing each one in light of constitutional provisions and statutory safeguards. Statement 1 is correct because Article 355 of the Constitution mandates that the Union protects states against external aggression and internal disturbances. Statement 2 is correct since the Constitution, particularly under the preventive detention provisions (Article 22), does not impose a duty on the States to provide legal counsel to a person held under preventive detention. Statement 3 is correct because under the Prevention of Terrorism Act, 2002, as with general legal principles, a confession made by an accused before the police is not admissible as evidence in court.",
+      "answer_options_provided": [
+        "(a) Only one",
+        "(b) Only two",
+        "(c) All three",
+        "(d) None"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Evaluation of Statement 1: Central Government's Duty to Protect States",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "Statement 1 asserts that according to the Constitution of India, the Central Government has a duty to protect States from internal disturbances.",
+              "tags": [
+                "Statement 1",
+                "Constitution",
+                "Central Government",
+                "protect States",
+                "internal disturbances"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "Article 355 of the Constitution mandates that it is the duty of the Union to safeguard every state from external aggression as well as internal disturbances, thereby ensuring stability and the proper functioning of state machinery.",
+              "tags": [
+                "Article 355",
+                "constitutional duty",
+                "protection"
+              ],
+              "references": [
+                {
+                  "current_tag": "protect States",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "internal disturbances",
+                    "protect States"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Title slide with bullet points: first bullet introducing Statement 1 and its claim, the second bullet explaining Article 355 and its role in national stability, with a reference box showing key points from the Indian Polity.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding how Article 355 empowers the central government to protect states from internal disturbances."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Evaluation of Statement 2: Legal Counsel in Preventive Detention",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement 2 claims that the Constitution exempts the States from providing legal counsel to a person held for preventive detention.",
+              "tags": [
+                "Statement 2",
+                "legal counsel",
+                "preventive detention",
+                "exemption"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "Under Article 22 of the Constitution, while safeguards are provided for individuals detained under preventive detention, there is no explicit constitutional mandate requiring the State to provide legal counsel to such detainees, unlike the rights provided during criminal trials.",
+              "tags": [
+                "Article 22",
+                "preventive detention",
+                "legal rights",
+                "no counsel mandate"
+              ],
+              "references": [
+                {
+                  "current_tag": "preventive detention",
+                  "other_content_sequential_id": "2.1",
+                  "other_content_tags": [
+                    "legal counsel",
+                    "exemption"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Slide displaying a side-by-side comparison: one column showing rights applicable in standard arrest (including the right to legal counsel) and the other column showing preventive detention provisions which do not mandate legal counsel.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Understanding the constitutional nuances of preventive detention under Article 22 and its implications on the provision of legal counsel."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Evaluation of Statement 3: Admissibility of Police Confessions Under POTA 2002",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Statement 3 asserts that under the Prevention of Terrorism Act, 2002, a confession made by the accused before the police cannot be used as evidence.",
+              "tags": [
+                "Statement 3",
+                "POTA 2002",
+                "confession",
+                "evidence inadmissibility"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "This provision aligns with the general legal principle that police confessions, not recorded in a formal judicial setting (for example, before a magistrate), are inadmissible as evidence, thereby protecting the rights of the accused.",
+              "tags": [
+                "confession",
+                "police",
+                "legal principle",
+                "admissibility",
+                "POTA safeguards"
+              ],
+              "references": [
+                {
+                  "current_tag": "confession",
+                  "other_content_sequential_id": "3.1",
+                  "other_content_tags": [
+                    "POTA 2002",
+                    "evidence inadmissibility"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Visual slide with a flowchart: Start with the legal principle on confessions, proceed to explain the standard rule under the Evidence Act, and conclude with the specific safeguard in POTA 2002 that prevents the use of police confessions as evidence.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Understanding the evidentiary rules under POTA 2002 and why confessions made before the police are inadmissible."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 4,
+          "title": "Final Determination",
+          "content": [
+            {
+              "content_sequential_id": "4.1",
+              "text": "Based on the analyses of the three statements, all three are correct: Statement 1 is validated by Article 355, Statement 2 reflects the constitutional provision under Article 22 regarding preventive detention, and Statement 3 aligns with the evidentiary safeguard of POTA 2002.",
+              "tags": [
+                "final determination",
+                "correct",
+                "all three"
+              ],
+              "references": [
+                {
+                  "current_tag": "Article 355",
+                  "other_content_sequential_id": "1.2",
+                  "other_content_tags": [
+                    "protect States"
+                  ]
+                },
+                {
+                  "current_tag": "preventive detention",
+                  "other_content_sequential_id": "2.2",
+                  "other_content_tags": [
+                    "Article 22"
+                  ]
+                },
+                {
+                  "current_tag": "POTA safeguards",
+                  "other_content_sequential_id": "3.2",
+                  "other_content_tags": [
+                    "confession",
+                    "evidence inadmissibility"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Concluding slide that recaps the evaluation of each statement with a final bullet confirming that all three statements are correct, accompanied by a summary diagram linking Article 355, Article 22, and POTA 2002.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "4.Q1",
+              "concept_to_be_assessed": "Ability to integrate constitutional and statutory understanding to determine the correctness of multiple legal statements."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(c) All three"
+        ],
+        "correct_answer_descriptions": [
+          "Statement 1 is upheld by the constitutional duty under Article 355; Statement 2 is correct as the Constitution does not obligate States to provide legal counsel in preventive detention; Statement 3 is correct because POTA 2002 disallows the use of police confessions as evidence."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "Indian Polity by M. Laxmikanth",
+          "Introduction to the Constitution of India by D.D. Basu"
+        ],
+        "accuracy_proof": [
+          "Article 355 confirms the central government's duty to protect states against internal disturbances.",
+          "Article 22 does not require that legal counsel be provided to persons detained under preventive detention.",
+          "Legal principles and POTA 2002 safeguard the inadmissibility of confessions made to the police."
+        ],
+        "missing_content": [
+          "Detailed case law related to preventive detention and evidentiary nuances under POTA could further enrich the explanation."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

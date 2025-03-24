@@ -1,0 +1,173 @@
+{
+  "user_id": "user_021",
+  "timestamp": "2025-03-22T14:58:01.639177",
+  "query": "22. Consider the following statements :\nStatement-I:\nIn the post-pandemic recent past, many Central Banks worldwide had carried out interest rate hikes.\nStatement-II:\nCentral Banks generally assume that they have the ability to counteract the rising consumer prices via monetary policy means.\nWhich one of the following is correct in respect of the above statements?\n(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I\n(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I\n(c) Statement-I is correct but Statement-II is incorrect\n(d) Statement-I is incorrect but Statement-II is correct",
+  "response": {
+    "solution_notes": {
+      "summary": "The question presents two statements: one about central banks worldwide increasing interest rates post-pandemic, and another about central banks' belief in their ability to control consumer prices through monetary policy. The solution assesses the correctness of these statements and their relationship.",
+      "answer_options_provided": [
+        "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+        "(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+        "(c) Statement-I is correct but Statement-II is incorrect",
+        "(d) Statement-I is incorrect but Statement-II is correct"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Analyzing Statement-I: Interest Rate Hikes Post-Pandemic",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "Statement-I asserts that many central banks worldwide have increased interest rates in the recent post-pandemic period.",
+              "tags": [
+                "Statement-I",
+                "central banks",
+                "interest rates",
+                "post-pandemic"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "This statement is factually correct.  Many central banks, including the Federal Reserve (USA), European Central Bank (ECB), Bank of England (BoE), and Reserve Bank of India (RBI), have raised interest rates to combat inflation.",
+              "tags": [
+                "factually correct",
+                "central banks",
+                "Federal Reserve",
+                "ECB",
+                "BoE",
+                "RBI",
+                "inflation"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.3",
+              "text": "These rate hikes are well-documented in financial news and reports from these central banks themselves.",
+              "tags": [
+                "rate hikes",
+                "financial news",
+                "central bank reports"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title: Statement-I Analysis.  Bullet points validating the interest rate hikes by various central banks with examples.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Verifying the factual accuracy of central banks increasing interest rates post-pandemic."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Analyzing Statement-II: Central Banks' Ability to Counteract Rising Consumer Prices",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement-II posits that central banks generally believe they can counteract rising consumer prices through monetary policy.",
+              "tags": [
+                "Statement-II",
+                "central banks",
+                "consumer prices",
+                "monetary policy"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "This statement is also correct. A primary function of central banks is to manage inflation, and they typically use monetary policy tools, such as interest rate adjustments, to achieve this goal.",
+              "tags": [
+                "correct",
+                "central banks",
+                "manage inflation",
+                "monetary policy",
+                "interest rates"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "By raising interest rates, central banks aim to reduce consumer spending and investment, thereby cooling down the economy and curbing inflation.",
+              "tags": [
+                "raising interest rates",
+                "reduce spending",
+                "reduce investment",
+                "curb inflation"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title: Statement-II Analysis. Bullet points explaining the function of central banks in managing inflation through monetary policy.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Understanding the role of central banks in managing inflation through monetary policy."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Relationship Between Statement-I and Statement-II",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Both statements are correct, but Statement-II provides the rationale behind Statement-I. The central banks raised the interest rates (Statement-I) because they believe it will control inflation (Statement-II).",
+              "tags": [
+                "both correct",
+                "Statement-II rationale",
+                "control inflation"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "The interest rate hikes (Statement I) are a direct consequence of the central banks applying their monetary policy tools (Statement II) to manage inflation.",
+              "tags": [
+                "interest rate hikes",
+                "monetary policy",
+                "manage inflation"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title: Linking Statements. Explanation of how Statement-II justifies Statement-I with arrows showing causal relationship.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Evaluating the relationship between central bank actions and their underlying policy objectives."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I"
+        ],
+        "correct_answer_descriptions": [
+          "Both statements are factually accurate, and the second statement explains the reason for the actions described in the first statement."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "'Macroeconomics' by N. Gregory Mankiw",
+          "'Indian Economy' by Ramesh Singh",
+          "Federal Reserve official website",
+          "European Central Bank official website",
+          "Bank of England official website",
+          "Reserve Bank of India official website"
+        ],
+        "accuracy_proof": [
+          "Central banks worldwide, including the Federal Reserve, ECB, BoE, and RBI, have increased interest rates post-pandemic.",
+          "Central banks use monetary policy tools like interest rate adjustments to manage inflation.",
+          "Statement II provides a valid rationale for the actions described in Statement I."
+        ],
+        "missing_content": [
+          "The specific impacts of these interest rate hikes on various economies and sectors could be further elaborated."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

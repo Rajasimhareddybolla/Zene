@@ -1,0 +1,262 @@
+{
+  "user_id": "user_00",
+  "timestamp": "2025-03-22T14:41:58.554150",
+  "query": "51. Consider the following statements in relation to Janani Suraksha Yojana :\n1. It is a safe motherhood intervention of the State Health Departments.\n2. Its objective is to reduce maternal and neonatal mortality among poor pregnant women.\n3. It aims to promote institutional delivery among poor pregnant women.\n4. Its objective includes providing public health facilities to sick infants up to one year of age.\nHow many of the statements given above are correct?\n(a) Only one\n(b) Only two\n(c) Only three\n(d) All four",
+  "response": {
+    "solution_notes": {
+      "summary": "The question assesses the understanding of the Janani Suraksha Yojana (JSY) and its objectives. The provided statements are evaluated to determine how many are correct based on the scheme's actual goals and interventions, primarily focusing on maternal and neonatal health.",
+      "answer_options_provided": [
+        "(a) Only one",
+        "(b) Only two",
+        "(c) Only three",
+        "(d) All four"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Understanding Janani Suraksha Yojana (JSY)",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "Janani Suraksha Yojana (JSY) is a safe motherhood intervention under the National Health Mission (NHM), not just of State Health Departments alone.",
+              "tags": [
+                "Janani Suraksha Yojana",
+                "JSY",
+                "safe motherhood intervention",
+                "National Health Mission",
+                "NHM"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "The primary objective of JSY is to reduce maternal and neonatal mortality among poor pregnant women by promoting institutional deliveries.",
+              "tags": [
+                "JSY",
+                "maternal mortality",
+                "neonatal mortality",
+                "institutional deliveries",
+                "poor pregnant women"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.3",
+              "text": "JSY focuses on encouraging pregnant women, especially from Below Poverty Line (BPL) households, to deliver in healthcare facilities.",
+              "tags": [
+                "JSY",
+                "pregnant women",
+                "BPL households",
+                "healthcare facilities"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.4",
+              "text": "JSY does not directly provide public health facilities to sick infants up to one year of age; its main focus is on maternal and neonatal health during and immediately after delivery.",
+              "tags": [
+                "JSY",
+                "public health facilities",
+                "sick infants",
+                "maternal health",
+                "neonatal health"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide introducing JSY and its core objectives with bullet points highlighting key aspects.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the primary goals and scope of Janani Suraksha Yojana."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Analyzing the Given Statements",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement 1: 'It is a safe motherhood intervention of the State Health Departments.' This statement is partially correct but incomplete as JSY is a national scheme under the National Health Mission, involving both central and state governments.",
+              "tags": [
+                "Statement 1",
+                "safe motherhood intervention",
+                "State Health Departments",
+                "National Health Mission"
+              ],
+              "references": [
+                {
+                  "current_tag": "National Health Mission",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "Janani Suraksha Yojana",
+                    "JSY",
+                    "safe motherhood intervention"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "Statement 2: 'Its objective is to reduce maternal and neonatal mortality among poor pregnant women.' This statement accurately reflects one of the core objectives of JSY.",
+              "tags": [
+                "Statement 2",
+                "maternal mortality",
+                "neonatal mortality",
+                "poor pregnant women"
+              ],
+              "references": [
+                {
+                  "current_tag": "maternal mortality",
+                  "other_content_sequential_id": "1.2",
+                  "other_content_tags": [
+                    "JSY",
+                    "maternal mortality",
+                    "neonatal mortality"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Statement 3: 'It aims to promote institutional delivery among poor pregnant women.' This statement correctly describes another key objective of JSY.",
+              "tags": [
+                "Statement 3",
+                "institutional delivery",
+                "poor pregnant women"
+              ],
+              "references": [
+                {
+                  "current_tag": "institutional delivery",
+                  "other_content_sequential_id": "1.3",
+                  "other_content_tags": [
+                    "JSY",
+                    "pregnant women",
+                    "BPL households",
+                    "healthcare facilities"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.4",
+              "text": "Statement 4: 'Its objective includes providing public health facilities to sick infants up to one year of age.' This is incorrect. JSY primarily focuses on maternal and neonatal health around the time of delivery, not general healthcare for infants up to one year.",
+              "tags": [
+                "Statement 4",
+                "public health facilities",
+                "sick infants",
+                "maternal health",
+                "neonatal health"
+              ],
+              "references": [
+                {
+                  "current_tag": "neonatal health",
+                  "other_content_sequential_id": "1.4",
+                  "other_content_tags": [
+                    "JSY",
+                    "public health facilities",
+                    "sick infants",
+                    "maternal health"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Each statement analyzed with bullet points indicating whether it's correct, partially correct, or incorrect, along with brief explanations.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Ability to critically evaluate statements related to JSY objectives and interventions."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Determining the Correct Number of Statements",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Based on the analysis, Statement 2 and Statement 3 are entirely correct, while Statement 1 is partially correct but incomplete, and Statement 4 is incorrect.",
+              "tags": [
+                "correct statements",
+                "Statement 2",
+                "Statement 3",
+                "Statement 1",
+                "Statement 4"
+              ],
+              "references": [
+                {
+                  "current_tag": "Statement 2",
+                  "other_content_sequential_id": "2.2",
+                  "other_content_tags": [
+                    "maternal mortality",
+                    "neonatal mortality",
+                    "poor pregnant women"
+                  ]
+                },
+                {
+                  "current_tag": "Statement 3",
+                  "other_content_sequential_id": "2.3",
+                  "other_content_tags": [
+                    "institutional delivery",
+                    "poor pregnant women"
+                  ]
+                },
+                {
+                  "current_tag": "Statement 4",
+                  "other_content_sequential_id": "2.4",
+                  "other_content_tags": [
+                    "public health facilities",
+                    "sick infants",
+                    "maternal health",
+                    "neonatal health"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "Therefore, only two statements (2 and 3) are completely correct.",
+              "tags": [
+                "two correct statements",
+                "Statement 2",
+                "Statement 3"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Summary slide concluding the number of correct statements with a brief recap.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Accurate identification of the number of correct statements related to JSY."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(b) Only two"
+        ],
+        "correct_answer_descriptions": [
+          "Only two of the given statements accurately describe the objectives and scope of the Janani Suraksha Yojana."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "'National Health Mission official guidelines'",
+          "'Ministry of Health and Family Welfare reports on JSY'"
+        ],
+        "accuracy_proof": [
+          "JSY primarily focuses on reducing maternal and neonatal mortality by promoting institutional deliveries, as stated in official NHM guidelines.",
+          "The scheme targets pregnant women, especially those from BPL families, and aims to improve their health outcomes during and immediately after delivery. Statement 4 is incorrect as it extends to general infant care, which is not the direct focus of JSY."
+        ],
+        "missing_content": [
+          "Details on the specific financial incentives provided under JSY and the roles of ASHAs were not covered."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

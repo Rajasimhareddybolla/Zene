@@ -1,0 +1,195 @@
+{
+  "user_id": "user_00",
+  "timestamp": "2025-03-22T12:48:07.228713",
+  "query": "84. Consider the following statements in respect of the National Flag of India according to the Flag Code of India, 2002:\nStatement-I :\nOne of the standard sizes of the National Flag of India is 600 mm x 400 mm.\nStatement-II:\nThe ratio of the length to the height (width) of the Flag shall be 3:2.\nWhich one of the following is correct in respect of the above statements?\n(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I\n(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I\n(c) Statement-I is correct but Statement-II is incorrect\n(d) Statement-I is incorrect but Statement-II is correct",
+  "response": {
+    "solution_notes": {
+      "summary": "The solution analyzes the two statements regarding the National Flag of India as per the Flag Code of India, 2002. Statement-I claims that one of the standard sizes is 600 mm x 400 mm, but the Bureau of Indian Standards (BIS) specifies nine standard sizes none of which includes 600 mm x 400 mm. Statement-II states that the ratio of the flag\u2019s length to its height is 3:2, which is correct according to the Flag Code. Thus, Statement-I is incorrect while Statement-II is correct, making option (d) the correct answer.",
+      "answer_options_provided": [
+        "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+        "(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+        "(c) Statement-I is correct but Statement-II is incorrect",
+        "(d) Statement-I is incorrect but Statement-II is correct"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Understanding Standard Sizes of the National Flag",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "The Flag Code of India, 2002 mandates the display of the National Flag with prescribed standard sizes to maintain uniformity and respect.",
+              "tags": [
+                "Flag Code of India",
+                "standard sizes",
+                "uniformity",
+                "display"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "The Bureau of Indian Standards (BIS) has specified nine standard sizes for the National Flag, including: 6300 mm x 4200 mm, 3600 mm x 2400 mm, 2700 mm x 1800 mm, 1800 mm x 1200 mm, 1350 mm x 900 mm, 900 mm x 600 mm, 450 mm x 300 mm, 225 mm x 150 mm, and 150 mm x 100 mm.",
+              "tags": [
+                "BIS",
+                "nine standard sizes",
+                "dimensions"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.3",
+              "text": "Statement-I asserts that one of the standard sizes is 600 mm x 400 mm, but this size does not appear in the prescribed list.",
+              "tags": [
+                "Statement-I",
+                "600 mm x 400 mm",
+                "incorrect size"
+              ],
+              "references": [
+                {
+                  "current_tag": "600 mm x 400 mm",
+                  "other_content_sequential_id": "1.2",
+                  "other_content_tags": [
+                    "BIS",
+                    "nine standard sizes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Title: 'Standard Sizes of the National Flag'. Use bullet points to list the official nine sizes, emphasizing that 600 mm x 400 mm is not included.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the prescribed standard sizes for the National Flag as per the BIS and Flag Code of India."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Understanding the Proportionality (3:2 Ratio)",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement-II asserts that the ratio of the length to the height of the flag is 3:2.",
+              "tags": [
+                "Statement-II",
+                "3:2 ratio",
+                "flag proportion"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "This 3:2 ratio is explicitly specified in the Flag Code of India, 2002, and is the accepted proportion for the National Flag.",
+              "tags": [
+                "Flag Code",
+                "proportion",
+                "3:2 ratio"
+              ],
+              "references": [
+                {
+                  "current_tag": "3:2 ratio",
+                  "other_content_sequential_id": "2.1",
+                  "other_content_tags": [
+                    "flag proportion",
+                    "Statement-II"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Title: 'Proportionality of the National Flag'. Present the concept of the 3:2 ratio with a simple diagram or graphical representation showing how the length compares to the height.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Comprehension of the specified 3:2 ratio for the National Flag as per the Flag Code of India."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Final Analysis and Conclusion",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Based on the analysis, Statement-I is incorrect because 600 mm x 400 mm is not one of the standard sizes, while Statement-II is correct as the mandated flag ratio is 3:2.",
+              "tags": [
+                "final analysis",
+                "Statement-I incorrect",
+                "Statement-II correct",
+                "conclusion"
+              ],
+              "references": [
+                {
+                  "current_tag": "Statement-I incorrect",
+                  "other_content_sequential_id": "1.3",
+                  "other_content_tags": [
+                    "600 mm x 400 mm",
+                    "incorrect size"
+                  ]
+                },
+                {
+                  "current_tag": "Statement-II correct",
+                  "other_content_sequential_id": "2.2",
+                  "other_content_tags": [
+                    "3:2 ratio",
+                    "proportion"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "Thus, the correct answer is option (d): Statement-I is incorrect but Statement-II is correct.",
+              "tags": [
+                "final answer",
+                "option (d)"
+              ],
+              "references": [
+                {
+                  "current_tag": "option (d)",
+                  "other_content_sequential_id": "3.1",
+                  "other_content_tags": [
+                    "final analysis",
+                    "conclusion"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Title: 'Conclusion'. Summarize the assessments of both statements with a clear highlight of the final answer, option (d).",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Ability to analyze and determine the correctness of statements regarding the National Flag of India."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(d) Statement-I is incorrect but Statement-II is correct"
+        ],
+        "correct_answer_descriptions": [
+          "The size 600 mm x 400 mm is not among the official nine standard sizes specified by BIS, whereas the 3:2 ratio is confirmed by the Flag Code of India, 2002."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "Flag Code of India, 2002",
+          "Bureau of Indian Standards (BIS) documentation",
+          "Indian Polity by M. Laxmikanth"
+        ],
+        "accuracy_proof": [
+          "BIS specifies the sizes: 6300 mm x 4200 mm, 3600 mm x 2400 mm, etc., confirming that 600 mm x 400 mm is not a standard size.",
+          "The 3:2 ratio is clearly stipulated in the Flag Code of India for the flag's proportion."
+        ],
+        "missing_content": [
+          "Details on ceremonial protocols and display conditions are not covered within this explanation."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

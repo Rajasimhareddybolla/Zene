@@ -1,0 +1,259 @@
+{
+  "user_id": "user_021",
+  "timestamp": "2025-03-22T14:52:49.516670",
+  "query": "95. Consider the following pairs with regard\nto sports awards :\n1. Major Dhyan Chand: For the most\nKhel Ratna Award spectacular and\noutstanding per-\nformance by a\nsportsperson over\nperiod of last four\nyears\n2. Arjuna Award : For the lifetime\nachievement by\na sportsperson\n3. Dronacharya Award: To honour eminent\ncoaches who have\nsuccessfully trained\nsportspersons or\nteams\n4. Rashtriya Khel : To recognize the\nProtsahan Puraskar contribution made\nby sportspersons\neven after their\nretirement\nHow many of the above pairs are\ncorrectly matched?\n(a) Only one\n(b) Only two\n(c) Only three\n(d) All four",
+  "response": {
+    "solution_notes": {
+      "summary": "The question requires evaluating the correctness of pairs matching sports awards with their descriptions. Only the Dronacharya Award is correctly matched with its description.",
+      "answer_options_provided": [
+        "(a) Only one",
+        "(b) Only two",
+        "(c) Only three",
+        "(d) All four"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Understanding Indian Sports Awards",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "Several sports awards are given in India to recognize and honour sportspersons and coaches for their contributions to sports.",
+              "tags": [
+                "sports awards",
+                "India",
+                "sportspersons",
+                "coaches",
+                "contributions"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "These awards aim to promote excellence and encourage participation in sports across the country.",
+              "tags": [
+                "excellence",
+                "participation",
+                "sports"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide with bullet points explaining the purpose of Indian sports awards.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "General understanding of Indian sports awards and their objectives."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Analysis of Award Descriptions",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Major Dhyan Chand Khel Ratna Award is for the most outstanding performance by a sportsperson over a period of the previous four years.",
+              "tags": [
+                "Major Dhyan Chand Khel Ratna Award",
+                "outstanding performance",
+                "sportsperson",
+                "four years"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "The description provided in the question is correct for Major Dhyan Chand Khel Ratna Award.",
+              "tags": [
+                "description",
+                "correct",
+                "Major Dhyan Chand Khel Ratna Award"
+              ],
+              "references": [
+                {
+                  "current_tag": "description",
+                  "other_content_sequential_id": "2.1",
+                  "other_content_tags": [
+                    "Major Dhyan Chand Khel Ratna Award",
+                    "outstanding performance",
+                    "sportsperson",
+                    "four years"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Arjuna Award is given for outstanding achievement in National sports.",
+              "tags": [
+                "Arjuna Award",
+                "outstanding achievement",
+                "National sports"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.4",
+              "text": "The description provided for Arjuna Award in the question is for lifetime achievement which is incorrect.",
+              "tags": [
+                "description",
+                "incorrect",
+                "Arjuna Award",
+                "lifetime achievement"
+              ],
+              "references": [
+                {
+                  "current_tag": "Arjuna Award",
+                  "other_content_sequential_id": "2.3",
+                  "other_content_tags": [
+                    "Arjuna Award",
+                    "outstanding achievement",
+                    "National sports"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.5",
+              "text": "Dronacharya Award is given to honour eminent coaches who have successfully trained sportspersons or teams.",
+              "tags": [
+                "Dronacharya Award",
+                "eminent coaches",
+                "sportspersons",
+                "teams"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.6",
+              "text": "The description provided in the question is correct for Dronacharya Award.",
+              "tags": [
+                "description",
+                "correct",
+                "Dronacharya Award"
+              ],
+              "references": [
+                {
+                  "current_tag": "description",
+                  "other_content_sequential_id": "2.5",
+                  "other_content_tags": [
+                    "Dronacharya Award",
+                    "eminent coaches",
+                    "sportspersons",
+                    "teams"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.7",
+              "text": "Rashtriya Khel Protsahan Puraskar is given to organizations (private and public sector) and individuals who have played a visible role in the area of sports promotion and development.",
+              "tags": [
+                "Rashtriya Khel Protsahan Puraskar",
+                "organizations",
+                "sports promotion",
+                "development"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.8",
+              "text": "The description provided for Rashtriya Khel Protsahan Puraskar is incorrect as it is not to recognize the contribution made by sportspersons even after their retirement.",
+              "tags": [
+                "description",
+                "incorrect",
+                "Rashtriya Khel Protsahan Puraskar",
+                "sportspersons",
+                "retirement"
+              ],
+              "references": [
+                {
+                  "current_tag": "Rashtriya Khel Protsahan Puraskar",
+                  "other_content_sequential_id": "2.7",
+                  "other_content_tags": [
+                    "Rashtriya Khel Protsahan Puraskar",
+                    "organizations",
+                    "sports promotion",
+                    "development"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "A table listing each award and its correct description, highlighting the mismatches in the provided descriptions.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Understanding the specific criteria and purpose of each sports award."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Determining Correctly Matched Pairs",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Based on the analysis, only Major Dhyan Chand Khel Ratna Award and Dronacharya Award are correctly matched.",
+              "tags": [
+                "correctly matched",
+                "Major Dhyan Chand Khel Ratna Award",
+                "Dronacharya Award"
+              ],
+              "references": [
+                {
+                  "current_tag": "Major Dhyan Chand Khel Ratna Award",
+                  "other_content_sequential_id": "2.2",
+                  "other_content_tags": [
+                    "description",
+                    "correct",
+                    "Major Dhyan Chand Khel Ratna Award"
+                  ]
+                },
+                {
+                  "current_tag": "Dronacharya Award",
+                  "other_content_sequential_id": "2.6",
+                  "other_content_tags": [
+                    "description",
+                    "correct",
+                    "Dronacharya Award"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Summarize the conclusion indicating the number of correctly matched pairs.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Ability to identify the correctly matched pairs from the given options."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(b) Only two"
+        ],
+        "correct_answer_descriptions": [
+          "Only Major Dhyan Chand Khel Ratna Award and Dronacharya Award are correctly matched with their descriptions."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "Ministry of Youth Affairs and Sports official website",
+          "Press Information Bureau (PIB) releases"
+        ],
+        "accuracy_proof": [
+          "The descriptions of each award are verified against the official guidelines and announcements from the Ministry of Youth Affairs and Sports.",
+          "The details regarding the purpose and eligibility criteria for each award are consistent with the information available on government websites."
+        ],
+        "missing_content": [
+          "Detailed history of each award and the specific selection process are not covered."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

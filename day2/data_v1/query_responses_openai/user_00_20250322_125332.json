@@ -1,0 +1,280 @@
+{
+  "user_id": "user_00",
+  "timestamp": "2025-03-22T12:53:32.968925",
+  "query": "90. Consider the following statements :\n1. Recently, all the countries of the\nUnited Nations have adopted the\nfirst-ever compact for international\nmigration, the 'Global Compact\nfor Safe, Orderly and Regular\nMigration (GCM)'.\n2. The objectives and commitments.\nstated in the GCM are binding on\nthe UN member countries.\n3. The GCM addresses internal\nmigration or internally displaced\npeople also in its objectives and\ncommitments.\nHow many of the above statements are\ncorrect?\n(a) Only one\n(b) Only two\n(c) All three\n(d) None",
+  "response": {
+    "solution_notes": {
+      "summary": "After a detailed analysis of each statement in the context of the Global Compact for Safe, Orderly and Regular Migration (GCM), we find that none of the statements is correct. Statement 1 is false because although the GCM is a significant intergovernmental agreement on international migration, not all UN member states have adopted it. Statement 2 is false as the GCM\u2019s objectives and commitments are non-binding; its provisions are voluntary in nature. Statement 3 is false because the GCM specifically addresses international migration and does not cover internal migration or issues related to internally displaced people.",
+      "answer_options_provided": [
+        "(a) Only one",
+        "(b) Only two",
+        "(c) All three",
+        "(d) None"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Background of the Global Compact for Safe, Orderly and Regular Migration (GCM)",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "The GCM is the first intergovernmental agreement to address all dimensions of international migration.",
+              "tags": [
+                "GCM",
+                "international migration",
+                "intergovernmental agreement"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "It was developed following extensive consultations and adopted in 2018 at an intergovernmental conference held in Marrakech, Morocco.",
+              "tags": [
+                "adoption",
+                "2018",
+                "Marrakech",
+                "consultations"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.3",
+              "text": "The GCM is not legally binding but serves as a cooperative framework for addressing migration issues on an international scale.",
+              "tags": [
+                "non-binding",
+                "cooperative framework",
+                "migration issues"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide with bullet points summarizing the background, adoption process, and non-binding nature of the GCM.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the origin, key features, and binding status of the GCM."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Analysis of Statement 1: Adoption by all UN Member States",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement 1 claims that all UN member countries have adopted the GCM.",
+              "tags": [
+                "Statement 1",
+                "adoption claim",
+                "UN member states"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "In reality, although a large majority of UN member states have endorsed the GCM, several countries have opted out or expressed reservations.",
+              "tags": [
+                "opted out",
+                "reservations",
+                "not all"
+              ],
+              "references": [
+                {
+                  "current_tag": "adoption",
+                  "other_content_sequential_id": "1.2",
+                  "other_content_tags": [
+                    "2018",
+                    "Marrakech"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Thus, Statement 1 is incorrect.",
+              "tags": [
+                "incorrect",
+                "false",
+                "Statement 1"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Bullet point slide listing the claim and contrasting it with the actual adoption status of the GCM, highlighting reservations by some member states.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Ability to evaluate claims regarding the universal adoption of international agreements."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Analysis of Statement 2: Binding Nature of GCM\u2019s Objectives and Commitments",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Statement 2 asserts that the objectives and commitments stated in the GCM are binding on all UN member countries.",
+              "tags": [
+                "Statement 2",
+                "binding nature",
+                "objectives and commitments"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "However, the GCM is designed as a non-binding framework, meaning its commitments are voluntary rather than legally enforceable.",
+              "tags": [
+                "non-binding",
+                "voluntary",
+                "framework"
+              ],
+              "references": [
+                {
+                  "current_tag": "non-binding",
+                  "other_content_sequential_id": "1.3",
+                  "other_content_tags": [
+                    "non-binding"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "3.3",
+              "text": "Therefore, Statement 2 is also incorrect.",
+              "tags": [
+                "incorrect",
+                "false",
+                "Statement 2"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Bullet point slide outlining the binding status of the GCM and differentiating between legally binding agreements and voluntary commitments.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Understanding the legal status and binding nature of international compacts."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 4,
+          "title": "Analysis of Statement 3: Inclusion of Internal Migration",
+          "content": [
+            {
+              "content_sequential_id": "4.1",
+              "text": "Statement 3 suggests that the GCM also includes internal migration or issues related to internally displaced people within its objectives and commitments.",
+              "tags": [
+                "Statement 3",
+                "internal migration",
+                "internally displaced"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "4.2",
+              "text": "The GCM, by its very title and scope, focuses exclusively on international migration and does not address internal migration.",
+              "tags": [
+                "international migration",
+                "exclusive focus",
+                "scope limitation"
+              ],
+              "references": [
+                {
+                  "current_tag": "international migration",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "international migration"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "4.3",
+              "text": "Hence, Statement 3 is incorrect.",
+              "tags": [
+                "incorrect",
+                "false",
+                "Statement 3"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Bullet point slide with a diagram contrasting international migration (covered by GCM) versus internal migration.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "4.Q1",
+              "concept_to_be_assessed": "Knowledge of the scope of the GCM and its focus on international migration only."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 5,
+          "title": "Final Conclusion",
+          "content": [
+            {
+              "content_sequential_id": "5.1",
+              "text": "Since Statement 1, Statement 2, and Statement 3 are all incorrect based on the nature and scope of the GCM, none of the statements is correct.",
+              "tags": [
+                "final conclusion",
+                "none correct",
+                "summary"
+              ],
+              "references": [
+                {
+                  "current_tag": "none correct",
+                  "other_content_sequential_id": "2.3",
+                  "other_content_tags": [
+                    "incorrect"
+                  ]
+                },
+                {
+                  "current_tag": "none correct",
+                  "other_content_sequential_id": "3.3",
+                  "other_content_tags": [
+                    "incorrect"
+                  ]
+                },
+                {
+                  "current_tag": "none correct",
+                  "other_content_sequential_id": "4.3",
+                  "other_content_tags": [
+                    "incorrect"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Final summary slide emphasizing that all statements are false and highlighting the correct answer option.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "5.Q1",
+              "concept_to_be_assessed": "Ability to integrate analysis of multiple statements to arrive at a comprehensive final conclusion."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(d) None"
+        ],
+        "correct_answer_descriptions": [
+          "None of the statements are correct: Statement 1 is false because not every UN member state has adopted the GCM; Statement 2 is false because the commitments are non-binding; and Statement 3 is false because the GCM exclusively addresses international migration, not internal migration."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "UN Global Compact for Safe, Orderly and Regular Migration document",
+          "UN General Assembly publications"
+        ],
+        "accuracy_proof": [
+          "The GCM was adopted by a majority but not all UN member states, is explicitly non-binding, and its scope is limited to international migration, as confirmed by the adoption process and its documented objectives."
+        ],
+        "missing_content": [],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

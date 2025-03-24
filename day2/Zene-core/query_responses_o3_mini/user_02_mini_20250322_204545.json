@@ -1,0 +1,156 @@
+{
+  "user_id": "user_02_mini",
+  "timestamp": "2025-03-22T20:45:45.415007",
+  "query": "83. Consider the following statements:\nStatement-I :\n7th August is declared as the National Handloom Day.\nStatement-II:\nIt was in 1905 that the Swadeshi Movement was launched on the same day.\nWhich one of the following is correct in respect of the above statements?\n(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I\n(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I\n(c) Statement-I is correct but Statement-II is incorrect\n(d) Statement-I is incorrect but Statement-II is correct",
+  "response": {
+    "solution_notes": {
+      "summary": "Both statements are factually correct. Statement-I indicates that National Handloom Day is observed on August 7th, while Statement-II explains that this date was chosen as it marks the launch of the Swadeshi Movement on August 7, 1905. Thus, Statement-II correctly explains Statement-I, making option (a) the correct answer.",
+      "answer_options_provided": [
+        "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+        "(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+        "(c) Statement-I is correct but Statement-II is incorrect",
+        "(d) Statement-I is incorrect but Statement-II is correct"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Understanding National Handloom Day (Statement-I)",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "National Handloom Day is observed annually on August 7th to honor the handloom weavers in India and to highlight the importance of the handloom sector.",
+              "tags": [
+                "National Handloom Day",
+                "August 7th",
+                "handloom weavers"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "The observance of this day is meant to raise awareness about the socio-economic contribution of the handloom industry and its cultural heritage.",
+              "tags": [
+                "socio-economic contribution",
+                "cultural heritage"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide with bullet points summarizing the significance of National Handloom Day and the reasons for its observance on August 7th.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the relevance and significance of National Handloom Day."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Understanding the Swadeshi Movement (Statement-II)",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "The Swadeshi Movement, launched on August 7, 1905, marked a significant phase in India's struggle against British rule, and it emphasized the promotion of indigenous industries including handloom.",
+              "tags": [
+                "Swadeshi Movement",
+                "August 7, 1905",
+                "indigenous industries"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "The launch of the Swadeshi Movement is linked with the protest against the partition of Bengal, which fostered the use of domestic products and boycott of British goods.",
+              "tags": [
+                "partition of Bengal",
+                "domestic products",
+                "boycott"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Timeline slide that shows the historical event of the Swadeshi Movement on August 7, 1905 and its impact on indigenous industries like handloom.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Recall the historical background and significance of the Swadeshi Movement in 1905."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Linking the Two Statements and Final Evaluation",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "The choice of August 7th as National Handloom Day is directly linked to the historical significance of the Swadeshi Movement launching on that day in 1905.",
+              "tags": [
+                "linkage",
+                "explanation",
+                "historical significance"
+              ],
+              "references": [
+                {
+                  "current_tag": "Swadeshi Movement",
+                  "other_content_sequential_id": "2.1",
+                  "other_content_tags": [
+                    "Swadeshi Movement",
+                    "August 7, 1905"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "This establishes that not only is Statement-I correct regarding the date of National Handloom Day, but Statement-II is also correct and serves as the correct explanation for choosing August 7th.",
+              "tags": [
+                "explanation validity",
+                "correct linkage"
+              ],
+              "references": [
+                {
+                  "current_tag": "National Handloom Day",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "National Handloom Day",
+                    "August 7th"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Summary slide which highlights that the Swadeshi Movement's launch on August 7, 1905, serves as the rationale behind observing National Handloom Day on the same date.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Ability to connect the historical event of the Swadeshi Movement to the observance of National Handloom Day."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I"
+        ],
+        "correct_answer_descriptions": [
+          "Both the statements are correct. National Handloom Day is observed on August 7th, and this date commemorates the launch of the Swadeshi Movement on August 7, 1905. Hence, Statement-II correctly explains the significance of the chosen date in Statement-I."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "Ministry of Textiles, Government of India website",
+          "'India's Struggle for Independence' by Bipan Chandra",
+          "Finn's content on National Handloom Day"
+        ],
+        "accuracy_proof": [
+          "Finn's content clearly states that National Handloom Day is observed on August 7th and commemorates the Swadeshi Movement launched on August 7, 1905.",
+          "Historical records affirm that the Swadeshi Movement began on August 7, 1905."
+        ],
+        "missing_content": [
+          "Extended details on subsequent celebrations or initiatives related to National Handloom Day beyond its historical background."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

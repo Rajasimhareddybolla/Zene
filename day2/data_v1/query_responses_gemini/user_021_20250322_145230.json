@@ -1,0 +1,243 @@
+{
+  "user_id": "user_021",
+  "timestamp": "2025-03-22T14:52:30.500829",
+  "query": "84. Consider the following statements in respect of the National Flag of India according to the Flag Code of India, 2002:\nStatement-I :\nOne of the standard sizes of the National Flag of India is 600 mm x 400 mm.\nStatement-II:\nThe ratio of the length to the height (width) of the Flag shall be 3:2.\nWhich one of the following is correct in respect of the above statements?\n(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I\n(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I\n(c) Statement-I is correct but Statement-II is incorrect\n(d) Statement-I is incorrect but Statement-II is correct",
+  "response": {
+    "solution_notes": {
+      "summary": "The question asks to evaluate two statements about the Indian National Flag based on the Flag Code of India, 2002. Statement I concerns a standard size of the flag, and Statement II concerns the flag's length-to-width ratio. The solution involves checking the accuracy of both statements against the Flag Code of India, 2002, and related standards.",
+      "answer_options_provided": [
+        "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+        "(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+        "(c) Statement-I is correct but Statement-II is incorrect",
+        "(d) Statement-I is incorrect but Statement-II is correct"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Understanding the Flag Code of India, 2002 and Standard Flag Sizes",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "The Flag Code of India, 2002 governs the use, display, and specifications of the National Flag.",
+              "tags": [
+                "Flag Code of India, 2002",
+                "National Flag",
+                "specifications"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "The Bureau of Indian Standards (BIS) prescribes standard sizes for the National Flag to ensure uniformity and respect.",
+              "tags": [
+                "Bureau of Indian Standards",
+                "BIS",
+                "standard sizes",
+                "uniformity"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.3",
+              "text": "According to Finn's content, BIS has specified nine standard sizes for the Indian National Flag.",
+              "tags": [
+                "BIS",
+                "nine standard sizes",
+                "Indian National Flag"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.4",
+              "text": "The standard sizes include: 6300 mm x 4200 mm, 3600 mm x 2400 mm, 2700 mm x 1800 mm, 1800 mm x 1200 mm, 1350 mm x 900 mm, 900 mm x 600 mm, 450 mm x 300 mm, 225 mm x 150 mm, and 150 mm x 100 mm.",
+              "tags": [
+                "standard sizes",
+                "National Flag",
+                "BIS specifications"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide with bullet points outlining the Flag Code, BIS standards, and the importance of standard sizes.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the role of the Flag Code of India and BIS in standardizing the National Flag."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Analyzing Statement-I: Flag Size of 600 mm x 400 mm",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement-I claims that one of the standard sizes is 600 mm x 400 mm.",
+              "tags": [
+                "Statement-I",
+                "flag size",
+                "600 mm x 400 mm"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "According to the information in Section 1.4, the provided list does not include 600 mm x 400 mm as a standard size. However, based on Section 1.4, 900 mm x 600 mm is a standard size.",
+              "tags": [
+                "non-standard size",
+                "600 mm x 400 mm",
+                "standard sizes",
+                "900 mm x 600 mm"
+              ],
+              "references": [
+                {
+                  "current_tag": "standard sizes",
+                  "other_content_sequential_id": "1.4",
+                  "other_content_tags": [
+                    "standard sizes",
+                    "National Flag",
+                    "BIS specifications"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Therefore, Statement-I is incorrect.",
+              "tags": [
+                "Statement-I",
+                "incorrect"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "A comparison table highlighting the stated size versus the actual standard sizes as per BIS.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Ability to verify flag sizes against official standards."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Analyzing Statement-II: Length to Width Ratio of 3:2",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Statement-II asserts that the ratio of the length to the width (height) of the flag shall be 3:2.",
+              "tags": [
+                "Statement-II",
+                "length to width ratio",
+                "3:2"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "This ratio is indeed the standard specification for the National Flag of India, as mandated by the Flag Code.",
+              "tags": [
+                "standard specification",
+                "National Flag",
+                "Flag Code"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.3",
+              "text": "Therefore, Statement-II is correct.",
+              "tags": [
+                "Statement-II",
+                "correct"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Diagram illustrating the correct length-to-width ratio of the National Flag.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Knowledge of the correct proportions of the Indian National Flag."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 4,
+          "title": "Final Determination",
+          "content": [
+            {
+              "content_sequential_id": "4.1",
+              "text": "Statement-I is incorrect as 600 mm x 400 mm is not a standard size.",
+              "tags": [
+                "Statement-I",
+                "incorrect",
+                "non-standard size"
+              ],
+              "references": [
+                {
+                  "current_tag": "incorrect",
+                  "other_content_sequential_id": "2.3",
+                  "other_content_tags": [
+                    "Statement-I",
+                    "incorrect"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "4.2",
+              "text": "Statement-II is correct as the length to width ratio of 3:2 is the standard.",
+              "tags": [
+                "Statement-II",
+                "correct",
+                "3:2 ratio"
+              ],
+              "references": [
+                {
+                  "current_tag": "correct",
+                  "other_content_sequential_id": "3.3",
+                  "other_content_tags": [
+                    "Statement-II",
+                    "correct"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Summary slide indicating which statement is correct and which is not.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "4.Q1",
+              "concept_to_be_assessed": "Overall understanding of the flag specifications and adherence to the Flag Code."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(d) Statement-I is incorrect but Statement-II is correct"
+        ],
+        "correct_answer_descriptions": [
+          "Statement-I is incorrect because 600 mm x 400 mm is not a standard size according to the Flag Code of India and BIS standards. Statement-II is correct because the length to width ratio of the National Flag is 3:2."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "Flag Code of India, 2002",
+          "Bureau of Indian Standards (BIS) documentation",
+          "Indian Polity by M. Laxmikanth"
+        ],
+        "accuracy_proof": [
+          "The Flag Code of India, 2002, specifies the rules and regulations regarding the display of the National Flag.",
+          "BIS standards confirm the standard sizes and the 3:2 length-to-width ratio.",
+          "The listed standard sizes from Finn's content do not include 600 mm x 400 mm."
+        ],
+        "missing_content": [
+          "Details about the specific materials used in the flag's construction.",
+          "Elaboration on the historical context of the flag's design and standardization."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

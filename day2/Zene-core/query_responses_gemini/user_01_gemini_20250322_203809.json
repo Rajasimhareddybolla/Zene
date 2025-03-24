@@ -1,0 +1,230 @@
+{
+  "user_id": "user_01_gemini",
+  "timestamp": "2025-03-22T20:38:09.590755",
+  "query": "88. Consider the following statements:\nStatement-I:\nIndia accounts for 3.2% of global export of goods.\nStatement-II:\nMany local companies and some foreign companies operating in India have taken advantage of India's 'Production-linked Incentive' scheme.\nWhich one of the following is correct in respect of the above statements?\n(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I\n(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation. for Statement-I\n(c) Statement-I is correct but Statement-II is incorrect\n(d) Statement-I is incorrect but Statement-II is correct",
+  "response": {
+    "solution_notes": {
+      "summary": "The solution assesses the correctness of two statements: India's share of global goods exports and the impact of the Production-Linked Incentive (PLI) scheme. Statement I is evaluated using recent data on global export shares, and Statement II is analyzed based on the known adoption and effects of the PLI scheme.",
+      "answer_options_provided": [
+        "(a) Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+        "(b) Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation. for Statement-I",
+        "(c) Statement-I is correct but Statement-II is incorrect",
+        "(d) Statement-I is incorrect but Statement-II is correct"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Analyzing India's Global Export Share",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "Statement I claims that India accounts for 3.2% of global goods exports.",
+              "tags": [
+                "Statement I",
+                "India",
+                "global exports",
+                "3.2%"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "According to recent data, India's global export share in 2023 is approximately 2.1% of the total world exports.",
+              "tags": [
+                "India",
+                "export share",
+                "2023",
+                "2.1%"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.3",
+              "text": "The provided content suggests India's global export share is around 2.1%, which contradicts the statement's claim of 3.2%.",
+              "tags": [
+                "contradiction",
+                "2.1%",
+                "3.2%"
+              ],
+              "references": [
+                {
+                  "current_tag": "2.1%",
+                  "other_content_sequential_id": "1.2",
+                  "other_content_tags": [
+                    "India",
+                    "export share",
+                    "2023"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "1.4",
+              "text": "Therefore, Statement I is incorrect based on current data.",
+              "tags": [
+                "Statement I",
+                "incorrect"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "A slide comparing India's claimed export percentage with actual export percentage using a bar graph.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding and verifying India's current global export share."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Evaluating the Impact of the Production-Linked Incentive (PLI) Scheme",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement II asserts that many local and some foreign companies operating in India have benefited from the Production-Linked Incentive (PLI) scheme.",
+              "tags": [
+                "Statement II",
+                "PLI scheme",
+                "local companies",
+                "foreign companies"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "The PLI scheme aims to boost domestic manufacturing and attract investments by providing financial incentives based on incremental sales.",
+              "tags": [
+                "PLI scheme",
+                "domestic manufacturing",
+                "investments",
+                "financial incentives"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Numerous companies across sectors such as electronics, pharmaceuticals, and automotive have indeed participated in and benefited from the PLI scheme.",
+              "tags": [
+                "electronics",
+                "pharmaceuticals",
+                "automotive",
+                "participation",
+                "benefits"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "2.4",
+              "text": "Therefore, Statement II is correct as the PLI scheme has successfully attracted participation and provided advantages to companies operating in India.",
+              "tags": [
+                "Statement II",
+                "correct",
+                "participation",
+                "advantages"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "A slide detailing the objectives and impact of the PLI scheme with examples of benefiting companies.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Assessing the effectiveness and reach of the Production-Linked Incentive scheme."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Determining the Relationship Between the Statements",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "Statement I, concerning India's global export share, is incorrect.",
+              "tags": [
+                "Statement I",
+                "incorrect"
+              ],
+              "references": [
+                {
+                  "current_tag": "incorrect",
+                  "other_content_sequential_id": "1.4",
+                  "other_content_tags": [
+                    "Statement I"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "3.2",
+              "text": "Statement II, regarding the benefits of the PLI scheme, is correct.",
+              "tags": [
+                "Statement II",
+                "correct"
+              ],
+              "references": [
+                {
+                  "current_tag": "correct",
+                  "other_content_sequential_id": "2.4",
+                  "other_content_tags": [
+                    "Statement II"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "3.3",
+              "text": "The PLI scheme could potentially influence India's export performance, but the specific export percentage mentioned in Statement I is inaccurate.",
+              "tags": [
+                "PLI scheme",
+                "export performance",
+                "inaccurate"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "3.4",
+              "text": "Therefore, Statement II does not explain Statement I, as Statement I is factually incorrect.",
+              "tags": [
+                "no explanation",
+                "factually incorrect"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "A slide summarizing the correctness of each statement and their relationship.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Analyzing the logical connection between the two statements."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(d) Statement-I is incorrect but Statement-II is correct"
+        ],
+        "correct_answer_descriptions": [
+          "Statement I is incorrect because India's global export share is approximately 2.1%, not 3.2%. Statement II is correct as many companies have benefited from the PLI scheme."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "Economic Survey of India 2023",
+          "Ministry of Commerce and Industry Reports",
+          "World Trade Organization (WTO) Statistics",
+          "UNCTAD Trade and Development Report"
+        ],
+        "accuracy_proof": [
+          "India's export data from the Ministry of Commerce indicates a global export share of around 2.1% in 2023.",
+          "Reports confirm the positive impact and participation in the Production-Linked Incentive (PLI) scheme across various sectors."
+        ],
+        "missing_content": [
+          "Detailed sector-specific data on PLI scheme benefits and export contributions is not provided."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

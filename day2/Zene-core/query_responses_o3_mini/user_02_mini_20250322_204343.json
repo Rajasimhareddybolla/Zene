@@ -1,0 +1,208 @@
+{
+  "user_id": "user_02_mini",
+  "timestamp": "2025-03-22T20:43:43.829062",
+  "query": "51. Consider the following statements in relation to Janani Suraksha Yojana :\n1. It is a safe motherhood intervention of the State Health Departments.\n2. Its objective is to reduce maternal and neonatal mortality among poor pregnant women.\n3. It aims to promote institutional delivery among poor pregnant women.\n4. Its objective includes providing public health facilities to sick infants up to one year of age.\nHow many of the statements given above are correct?\n(a) Only one\n(b) Only two\n(c) Only three\n(d) All four",
+  "response": {
+    "solution_notes": {
+      "summary": "This solution evaluates each statement in relation to the objectives and interventions of Janani Suraksha Yojana (JSY). It explains that JSY is a flagship safe motherhood intervention implemented through state health systems under the National Rural Health Mission, aimed at reducing maternal and neonatal mortality by promoting institutional deliveries among poor pregnant women. Statements 2 and 3 are directly in line with these objectives. Statement 4, which claims that JSY provides public health facilities to sick infants up to one year of age, is incorrect. Although Statement 1 refers to JSY as a safe motherhood intervention of the State Health Departments, it is acceptable when considering that the scheme is operationalized at the state level through their health departments. Thus, three out of the four statements are correct.",
+      "answer_options_provided": [
+        "(a) Only one",
+        "(b) Only two",
+        "(c) Only three",
+        "(d) All four"
+      ],
+      "sections": [
+        {
+          "section_sequential_id": 1,
+          "title": "Understanding Janani Suraksha Yojana (JSY) and Its Objectives",
+          "content": [
+            {
+              "content_sequential_id": "1.1",
+              "text": "Janani Suraksha Yojana (JSY) is a flagship centrally sponsored scheme under the National Rural Health Mission, designed to reduce maternal and neonatal mortality through promoting institutional deliveries among poor pregnant women.",
+              "tags": [
+                "JSY",
+                "flagship scheme",
+                "maternal mortality",
+                "neonatal mortality",
+                "institutional delivery"
+              ],
+              "references": []
+            },
+            {
+              "content_sequential_id": "1.2",
+              "text": "The scheme provides financial incentives to mothers and Accredited Social Health Activists (ASHAs) to encourage pregnant women from below poverty line (BPL) households to deliver in health facilities, thereby improving maternal and child health outcomes.",
+              "tags": [
+                "financial incentives",
+                "ASHAs",
+                "BPL households",
+                "maternal health",
+                "child health"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "Title slide with bullet points summarizing the key objectives of JSY, highlighting its focus on reducing maternal and neonatal mortality and promoting institutional delivery.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "1.Q1",
+              "concept_to_be_assessed": "Understanding the primary goals and mechanisms of JSY."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 2,
+          "title": "Evaluation of Individual Statements",
+          "content": [
+            {
+              "content_sequential_id": "2.1",
+              "text": "Statement 1: 'It is a safe motherhood intervention of the State Health Departments.' This statement is acceptable since JSY is a safe motherhood intervention that is implemented through the state health systems, even though it is a centrally sponsored scheme.",
+              "tags": [
+                "Statement 1",
+                "safe motherhood",
+                "state health departments",
+                "implementation"
+              ],
+              "references": [
+                {
+                  "current_tag": "safe motherhood",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "JSY",
+                    "maternal mortality"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.2",
+              "text": "Statement 2: 'Its objective is to reduce maternal and neonatal mortality among poor pregnant women.' This is correct as the scheme was specifically launched to address these concerns.",
+              "tags": [
+                "Statement 2",
+                "maternal mortality",
+                "neonatal mortality",
+                "objectives"
+              ],
+              "references": [
+                {
+                  "current_tag": "reduce maternal and neonatal mortality",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "JSY",
+                    "institutional delivery"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.3",
+              "text": "Statement 3: 'It aims to promote institutional delivery among poor pregnant women.' This is also correct as promoting institutional deliveries is central to JSY\u2019s strategy to lower maternal and neonatal risks.",
+              "tags": [
+                "Statement 3",
+                "institutional delivery",
+                "poor pregnant women",
+                "objectives"
+              ],
+              "references": [
+                {
+                  "current_tag": "institutional delivery",
+                  "other_content_sequential_id": "1.1",
+                  "other_content_tags": [
+                    "JSY",
+                    "maternal mortality"
+                  ]
+                }
+              ]
+            },
+            {
+              "content_sequential_id": "2.4",
+              "text": "Statement 4: 'Its objective includes providing public health facilities to sick infants up to one year of age.' This statement is incorrect because JSY is focused on reducing maternal and neonatal mortality and does not extend its objectives to offering public health facilities for sick infants beyond the neonatal period.",
+              "tags": [
+                "Statement 4",
+                "public health facilities",
+                "sick infants",
+                "incorrect"
+              ],
+              "references": []
+            }
+          ],
+          "slide_layout": "A slide where each statement is listed with its evaluation next to it, using icons or color highlights to differentiate correct statements from incorrect ones.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "2.Q1",
+              "concept_to_be_assessed": "Ability to critically evaluate each statement regarding JSY."
+            }
+          ]
+        },
+        {
+          "section_sequential_id": 3,
+          "title": "Final Conclusion and Answer",
+          "content": [
+            {
+              "content_sequential_id": "3.1",
+              "text": "The analysis shows that Statements 1, 2, and 3 are correct while Statement 4 is incorrect. Therefore, the correct answer is that only three of the statements are correct.",
+              "tags": [
+                "Final Conclusion",
+                "correct statements",
+                "incorrect statement",
+                "answer determination"
+              ],
+              "references": [
+                {
+                  "current_tag": "correct statements",
+                  "other_content_sequential_id": "2.1",
+                  "other_content_tags": [
+                    "Statement 1"
+                  ]
+                },
+                {
+                  "current_tag": "correct statements",
+                  "other_content_sequential_id": "2.2",
+                  "other_content_tags": [
+                    "Statement 2"
+                  ]
+                },
+                {
+                  "current_tag": "correct statements",
+                  "other_content_sequential_id": "2.3",
+                  "other_content_tags": [
+                    "Statement 3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "slide_layout": "Final summary slide highlighting the count of correct statements and the selected option with a clear conclusion.",
+          "assessment_questions": [
+            {
+              "question_sequential_id": "3.Q1",
+              "concept_to_be_assessed": "Recalling the final determination regarding which statements about JSY are correct."
+            }
+          ]
+        }
+      ],
+      "final_answer": {
+        "correct_answer_options": [
+          "(c) Only three"
+        ],
+        "correct_answer_descriptions": [
+          "Statements 1, 2, and 3 are correct as JSY is a safe motherhood intervention implemented through state health systems, with the objective to reduce maternal and neonatal mortality by promoting institutional deliveries among poor pregnant women. Statement 4 is incorrect."
+        ]
+      },
+      "content_checks": {
+        "accuracy_through_sources": [
+          "India Year Book by Publications Division, Government of India",
+          "Social Problems in India by Ram Ahuja",
+          "Indian Economy by Ramesh Singh"
+        ],
+        "accuracy_proof": [
+          "JSY is documented as a flagship scheme under NRHM aimed at reducing maternal and neonatal mortality with a focus on promoting institutional deliveries.",
+          "The scheme does not include provision for public health facilities to treat sick infants up to one year of age."
+        ],
+        "missing_content": [
+          "Operational challenges and regional implementation differences of JSY are not covered in this explanation."
+        ],
+        "is_final_answer_among_answer_options": true
+      }
+    }
+  }
+}

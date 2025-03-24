@@ -1,0 +1,47 @@
+{
+  "user_id": "user123",
+  "agent_type": "zene",
+  "timestamp": "2025-03-23 09:35:58",
+  "conversation": [
+    {
+      "role": "user",
+      "content": "can you explain about Chola dynasty"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"topics\":[\"History\"],\"sub-topics\":[\"Medieval India\",\"South Indian Kingdoms\"],\"core_topic\":\"Chola Dynasty\",\"user_intent\":\"The user wants an explanation about the Chola Dynasty.\",\"is_ambiguous\":false,\"query_category\":\"concept\",\"target\":\"curriculum\",\"is_in_upsc_scope\":true,\"is_topic_switched\":true,\"next_agent\":\"Milo\",\"vector_database_retrieval_queries\":[\"Chola Dynasty overview\",\"Chola administration and governance\",\"Chola art and architecture\",\"Chola contributions to Indian culture\",\"Chola military and conquests\"]}"
+    },
+    {
+      "role": "user",
+      "content": "can you explain about Chola dynasty"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"topics\":[\"History\"],\"sub-topics\":[\"Medieval India\",\"South Indian Kingdoms\"],\"core_topic\":\"Chola Dynasty\",\"user_intent\":\"The user wants an explanation about the Chola Dynasty.\",\"is_ambiguous\":false,\"query_category\":\"concept\",\"target\":\"curriculum\",\"is_in_upsc_scope\":true,\"is_topic_switched\":false,\"next_agent\":\"Milo\",\"vector_database_retrieval_queries\":[\"Chola Dynasty overview\",\"Chola administration and governance\",\"Chola art and architecture\",\"Chola contributions to Indian culture\",\"Chola military and conquests\"]}"
+    }
+  ],
+  "usage_stats": [
+    {
+      "query": "can you explain about Chola dynasty",
+      "response": "{\"topics\":[\"History\"],\"sub-topics\":[\"Medieval India\",\"South Indian Kingdoms\"],\"core_topic\":\"Chola Dynasty\",\"user_intent\":\"The user wants an explanation about the Chola Dynasty.\",\"is_ambiguous\":false,\"query_category\":\"concept\",\"target\":\"curriculum\",\"is_in_upsc_scope\":true,\"is_topic_switched\":true,\"next_agent\":\"Milo\",\"vector_database_retrieval_queries\":[\"Chola Dynasty overview\",\"Chola administration and governance\",\"Chola art and architecture\",\"Chola contributions to Indian culture\",\"Chola military and conquests\"]}",
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 120,
+        "total_tokens": 1122,
+        "latency_seconds": 1.6199419498443604
+      },
+      "latency_seconds": 1.6199419498443604
+    },
+    {
+      "query": "can you explain about Chola dynasty",
+      "response": "{\"topics\":[\"History\"],\"sub-topics\":[\"Medieval India\",\"South Indian Kingdoms\"],\"core_topic\":\"Chola Dynasty\",\"user_intent\":\"The user wants an explanation about the Chola Dynasty.\",\"is_ambiguous\":false,\"query_category\":\"concept\",\"target\":\"curriculum\",\"is_in_upsc_scope\":true,\"is_topic_switched\":false,\"next_agent\":\"Milo\",\"vector_database_retrieval_queries\":[\"Chola Dynasty overview\",\"Chola administration and governance\",\"Chola art and architecture\",\"Chola contributions to Indian culture\",\"Chola military and conquests\"]}",
+      "usage": {
+        "prompt_tokens": 1142,
+        "completion_tokens": 120,
+        "total_tokens": 1262,
+        "latency_seconds": 1.2671270370483398
+      },
+      "latency_seconds": 1.2671270370483398
+    }
+  ]
+}
