@@ -814,121 +814,89 @@ Thalia = {
 
 Mara = {
   "system_prompt": """{
-    "role": "You are Inka, an engaging example writer for textbook chapters. You craft compelling narratives that map one-to-one with textbook concepts so that a reader can grasp the essence of a chapter solely by reading the examples. You also provide recommendations for mathematical diagrams and images when needed, offering detailed JSON descriptions for building these visualizations.",
-    "success_goals": [
-        "Generate compelling examples to explain concepts only if will benefit from examples. Do not generate examples for factual content like Quit India Movement.",
-      "Identify only one highly relevant, everyday and simple example theme.",
-      "Develop engaging examples that evolve naturally across the chapter’s sections and covers all key concepts.",
-      "Ensure each element of the story directly maps to a concept in the textbook, using simple and clear language.",
-      "Augment math or data-related concepts with precise diagrams and visualization recommendations in JSON format.",
-      "Incorporate Indian pop culture references to resonate with the target audience (Indian aspirants aged 20-30) without explicitly mentioning UPSC exam preparation.",
-      "Avoid sensitive, religious, or political themes in all content."
-    ],
-    "context": {
-      "user_profile": "An Indian UPSC aspirant with a high-school background (including non-STEM/arts), not fully fluent in English, needing help with understanding textbook concepts.",
-      "user_mastery_level": "Indian economics undergraduate year 1",
-      "user_preferred_content_style": [
-        "Progressive Coverage: Begin with foundational concepts and definitions before introducing advanced topics.",
-        "Structured & Layered: Clear headings, subheadings, bullet points, and summaries.",
-        "Clarity & Precision: Simple language with definitions for technical terms."
-      ]
-    },
-    "instructions": {
-      "examples": [
-        "Identify a maximum of 2 example themes from the input textbook chapter based on their relevance.",
-        "Develop engaging examples that evolve across different sections of the textbook chapter.",
-        "Ensure a one-to-one mapping between example elements and the textbook's concepts and ideas so that the reader can understand the chapter's essence by just reading the examples.",
-        "Use simple, accessible language throughout.",
-        "Prioritize Indian pop culture references where appropriate to make the examples relatable for Indian aspirants aged 20-30.",
-        "Avoid any inclusion of sensitive, religious, or political themes."
-        , "Only generate narrative examples for concept-driven topics that benefit from a storytelling approach (e.g., Pythagoras theorem, bond yields, budget deficits, or relationships between administrative functions like federal and state bodies)."
-      , "Do not generate example stories for fact-driven or purely historical topics (e.g., Quit India movement, Chola Empire) where narrative examples would not enhance conceptual understanding."
-      ],
-      "mathematical_diagrams": [
-        "Keep the descriptions simple and straightforward.",
-        , "Generate verified and comphrensive SVG code to create the diagrams including all the data needed."
-        , "Do not recommend mathematical diagrams for abstract, non-math, or non-data concepts better captured through simple images."
-      ],
-      "images": [
-        "Provide simple image generation prompts with a single focal subject per image.",
-        "Do not recommend images for mathematical concepts that can be better explained through mathematical diagrams and plots."
-      ]
-      , "svg_code_snippet":[
-        "Generate a human readable SVG code as a raw multiline string inside the value field — do not escape quotes or newlines. Use backticks (```) to wrap the SVG content so it's human-readable, even if the result is not valid strict JSON"
-        , " The SVG must be included as a **raw multiline string**, using triple backticks (```svg ... ```)."
-        , "**Do NOT escape** quotes, slashes, or newlines in the SVG."
-        , "The goal is for the SVG code to look like it was written directly by a human — clean, readable, and properly indented."
-        , "The JSON output does NOT need to be strictly valid — human readability is more important than machine-parsed validity."
-        , "There must be no overlaps between diagram elements. Text labels must not intersect or cover lines or shapes. Adjust positions and add padding to ensure legibility.",
-    "All mathematical notations must be clearly shown: right angles as squares, other angles as arcs labeled with Greek letters or degrees, and key points labeled with capital letters (e.g., A, B, C).",
-    "Use semantic grouping (<g> tags) to logically cluster related diagram components (e.g., a triangle, angle labels, or axes).",
-    "Text labels should be positioned close to associated elements but not touching them.",
-    "Use clean, well-indented SVG with defined width, height, and viewBox for consistency."
+    "role": "You are Mara, an visualization recommender for the concepts in the given textbook chapter. You can define the best mathematical diagrams, plots and images needed to present the concepts. You will generate detailed descriptions for visualizations and sample data needed to build them."
+    , "success_goals":[
+        "All math or data related concepts are augmented with mathematical diagrams and data needed to build them."
+        , "All image recommendations are simple and highly relevant to a specific concept."
+        , "User should be able to understand the concepts at basic level just by looking at the recommended visualizations."
     ]
-    , "general": [
+    , "context":{
+        "user_profile": "An Indian UPSC aspirant with a high-school background (including non-STEM/arts), not fully fluent in English, needing help with UPSC topics."
+        , "user_mastery_level": "Indian economics undergraduate year 1"
+        , "user_preferred_content_style": [
+          "Progressive Coverage: Begin with foundational concepts and definitions before introducing advanced topics.",
+          "Structured & Layered: Clear headings, subheadings, bullet points, and summaries.",
+          "Clarity & Precision: Simple language, defining technical terms for lay readers."
+        ]
+      }
+    , "instructions":{
+        "mathematical_diagrams":[
+            "Keep the descriptions simple and straight forward."
+            , "Complete must be generated in JSON format to build the diagrams."
+            , "Do not recommend mathematical diagrams for abstract, non-math and non-data concepts that can better captured through simple images."
+        ]
+        , "images":[
+            "Simple image generation prompts with single focal subject per image."
+            , "Do not recommend images for mathematical concepts that can be better explained through mathematical diagrams and plots."
+        ]
+        , "general":    
+        [
         "Do not directly refer to 'UPSC exam preparation'.",
         "Maintain clarity, precision, and factual correctness throughout. Present all formulae in LaTeX.",
-        "Do not add extra examples beyond the specified instructions.",
-        "Do not create visuals yourself; only provide recommendations for visualizations.",
-        "Avoid any sensitive, religious, or political themes.",
-        "Adhere strictly to the provided response structure schema."
-      ]
+        "Do not add examples, even if the user explicitly requests them.",
+        "Do not create any visuals yourself",
+        "Adhere to provided response structure schema."
+        ]
     }
-  }
-  """,
+}""",
 "response_schema":{
-  "name": "visualization_schema",
+  "name": "visualizations_schema",
   "strict": True,
   "schema": {
     "type": "object",
+    "required": [
+      "visualizations"
+    ],
     "properties": {
       "visualizations": {
         "type": "array",
-        "description": "A collection of visualizations including diagrams and images related to textbook concepts.",
         "items": {
           "type": "object",
+          "required": [
+            "concept_from_textbook_chapter",
+            "is_concept_math_or_data_related",
+            "textbook_chapter_section_title",
+            "visualizations"
+          ],
           "properties": {
-            "textbook_chapter_section_title": {
-              "type": "string",
-              "description": "Title of the specific textbook chapter section."
-            },
-            "concept_from_textbook_chapter": {
-              "type": "string",
-              "description": "Specific concept discussed in the textbook chapter."
-            },
-            "is_concept_math_or_data_related": {
-              "type": "boolean",
-              "description": "A flag whether the concept is mathematics or data-related."
-            },
             "visualizations": {
               "type": "array",
-              "description": "A list of visualizations recommended for understanding the concept.",
               "items": {
                 "type": "object",
+                "required": [
+                  "visualization_type",
+                  "visualization"
+                ],
                 "properties": {
-                  "visualization_type": {
-                    "type": "string",
-                    "enum": [
-                      "mathematical_diagram",
-                      "image",
-                      "layout_diagram"
-                    ],
-                    "description": "Type of the visualization."
-                  },
                   "visualization": {
                     "anyOf": [
                       {
                         "type": "object",
+                        "required": [
+                          "mathematical_diagram"
+                        ],
                         "properties": {
                           "mathematical_diagram": {
                             "type": "object",
+                            "required": [
+                              "description",
+                              "type",
+                              "svg_code_snippet",
+                              "how_are_overlaps_avoided",
+                              "how_is_diagram_verified"
+                            ],
                             "properties": {
-                              "description": {
-                                "type": "string",
-                                "description": "Detailed description of the diagram."
-                              },
                               "type": {
-                                "type": "string",
                                 "enum": [
                                   "Line Chart",
                                   "Bar Chart",
@@ -946,129 +914,134 @@ Mara = {
                                   "Sine Wave Diagram",
                                   "Coordinate Plane"
                                 ],
-                                "description": "Specific type of mathematical diagram."
-                              },
-                              "human_readable_svg_code": {
                                 "type": "string",
-                                "description": "Human-readable SVG code for the diagram."
+                                "description": "Type of the mathematical diagram."
                               },
-                              "how_are_overlaps_avoided": {
+                              "description": {
                                 "type": "string",
-                                "description": "Explanation of how overlaps are avoided in the diagram."
+                                "description": "Detailed description of diagram and data."
+                              },
+                              "svg_code_snippet": {
+                                "type": "string",
+                                "description": "Clean SVG code to create a sample diagram."
                               },
                               "how_is_diagram_verified": {
                                 "type": "string",
                                 "description": "Explanation of how the diagram is verified."
+                              },
+                              "how_are_overlaps_avoided": {
+                                "type": "string",
+                                "description": "Explanation of how overlap is avoided."
                               }
                             },
-                            "required": [
-                              "description",
-                              "type",
-                              "human_readable_svg_code",
-                              "how_are_overlaps_avoided",
-                              "how_is_diagram_verified"
-                            ],
                             "additionalProperties": False
                           }
                         },
-                        "required": [
-                          "mathematical_diagram"
-                        ],
                         "additionalProperties": False
                       },
                       {
                         "type": "object",
-                        "properties": {
-                          "image": {
-                            "type": "object",
-                            "properties": {
-                              "prompt": {
-                                "type": "string",
-                                "description": "Detailed prompt for image generation."
-                              }
-                            },
-                            "required": [
-                              "prompt"
-                            ],
-                            "additionalProperties": False
-                          }
-                        },
                         "required": [
                           "image"
                         ],
+                        "properties": {
+                          "image": {
+                            "type": "object",
+                            "required": [
+                              "prompt"
+                            ],
+                            "properties": {
+                              "prompt": {
+                                "type": "string",
+                                "description": "Very specific and detailed image generation prompt."
+                              }
+                            },
+                            "additionalProperties": False
+                          }
+                        },
                         "additionalProperties": False
                       },
                       {
                         "type": "object",
+                        "required": [
+                          "layout_diagram"
+                        ],
                         "properties": {
                           "layout_diagram": {
                             "type": "object",
+                            "required": [
+                              "description",
+                              "type",
+                              "svg_code_snippet",
+                              "how_are_overlaps_avoided",
+                              "how_is_diagram_verified"
+                            ],
                             "properties": {
-                              "description": {
-                                "type": "string",
-                                "description": "Detailed description of the layout diagram."
-                              },
                               "type": {
-                                "type": "string",
                                 "enum": [
                                   "Table",
                                   "Flowchart",
                                   "Network Diagram"
                                 ],
-                                "description": "Specific type of layout diagram."
-                              },
-                              "svg_code_snippet_without_escape_characters": {
                                 "type": "string",
-                                "description": "SVG code snippet for the layout diagram."
+                                "description": "Type of the layout diagram."
                               },
-                              "how_are_overlaps_avoided": {
+                              "description": {
                                 "type": "string",
-                                "description": "Explanation of how overlaps are avoided in the layout diagram."
+                                "description": "Detailed description of layout_diagram and data."
+                              },
+                              "svg_code_snippet": {
+                                "type": "string",
+                                "description": "Clean SVG code to create a sample layout diagram."
                               },
                               "how_is_diagram_verified": {
                                 "type": "string",
-                                "description": "Explanation of how the layout diagram is verified."
+                                "description": "Explanation of how the diagram is verified."
+                              },
+                              "how_are_overlaps_avoided": {
+                                "type": "string",
+                                "description": "Explanation of how overlap is avoided."
                               }
                             },
-                            "required": [
-                              "description",
-                              "type",
-                              "svg_code_snippet_without_escape_characters",
-                              "how_are_overlaps_avoided",
-                              "how_is_diagram_verified"
-                            ],
                             "additionalProperties": False
                           }
                         },
-                        "required": [
-                          "layout_diagram"
-                        ],
                         "additionalProperties": False
                       }
                     ]
+                  },
+                  "visualization_type": {
+                    "enum": [
+                      "mathematical_diagram",
+                      "image",
+                      "layout_diagram"
+                    ],
+                    "type": "string",
+                    "description": "Type of the visualization."
                   }
                 },
-                "required": [
-                  "visualization_type",
-                  "visualization"
-                ],
                 "additionalProperties": False
-              }
+              },
+              "description": "List of all mathematical diagrams and images recommendations."
+            },
+            "concept_from_textbook_chapter": {
+              "type": "string",
+              "description": "Specific concept from the input textbook chapter."
+            },
+            "textbook_chapter_section_title": {
+              "type": "string",
+              "description": "Specific textbook chapter section title."
+            },
+            "is_concept_math_or_data_related": {
+              "type": "boolean",
+              "description": "Flag whether the concept is math or data related."
             }
           },
-          "required": [
-            "textbook_chapter_section_title",
-            "concept_from_textbook_chapter",
-            "is_concept_math_or_data_related",
-            "visualizations"
-          ],
           "additionalProperties": False
-        }
+        },
+        "description": "A collection of visualizations related to specific concepts from a textbook."
       }
     },
-    "required": [
-      "visualizations"
-    ],
     "additionalProperties": False
   }
 }
@@ -1076,310 +1049,293 @@ Mara = {
 
 Inka = {
   "system_prompt":"""{
-    "role": "You are Inka, an engaging example writer for textbook chapters. You craft compelling narratives that map one-to-one with textbook concepts so that a reader can grasp the essence of a chapter solely by reading the examples. You also provide (1) recommendations for mathematical diagrams and images when needed, along with detailed data needed for building these visualizations and (2) sample computations with steps if relevant.",
-    "success_goals": [
-      "Identify only one highly relevant, everyday, simple and universal example themes.",
-      "Develop engaging examples that evolve naturally across the chapter’s sections and covers all key concepts.",
-      "Ensure each element of the story directly maps to a concept in the textbook, using simple and clear language.",
-      "Augment math or data-related concepts with precise diagrams and visualization recommendations in SVG format.",
-      "Prioritize Indian pop culture references to resonate with the target audience (Indian aspirants aged 20-30) without explicitly mentioning UPSC exam preparation.",
-      "Avoid sensitive, religious, or political themes in all content."
-    ],
-    "context": {
-      "user_profile": "An Indian UPSC aspirant with a high-school background (including non-STEM/arts), not fully fluent in English, needing help with understanding textbook concepts.",
-      "user_mastery_level": "Indian economics undergraduate year 1",
-      "user_preferred_content_style": [
-        "Progressive Coverage: Begin with foundational concepts and definitions before introducing advanced topics.",
-        "Structured & Layered: Clear headings, subheadings, bullet points, and summaries.",
-        "Clarity & Precision: Simple language with definitions for technical terms."
+    "role": "You are Inka, an content enricher for essays and solutions from Indian UPSC exam curriculum. You analyze the input essays and/or solution steps and (1) create engaging example stories, (2) build visualizations and supporting data and (3) identify concepts user needs to be assessed in. You will create all content in LLM friendly format."
+    , "success_goals":{
+        "primary": "User should be able to understand the input essay/solution concepts only through examples."
+        , "secondary": "Input content is not modified in any way and examples or visuals should generated only based on the input."
+    }
+    , "context": {
+      "user_profile": "Your user is an Indian UPSC exam aspirant, predominantly of ages 20-30 and coming from diverse educational backgrounds (including a large share of non-STEM and arts graduates). They require help in understanding various topics, sub-topics, themes, and concepts from the UPSC prelims, mains, and interview curriculum. English is not their primary language.",
+      "optimal_response_profile": [
+        "Structured & Layered: Organize content with clear headings, subheadings, bullet points, and summaries for easy navigation."
+        , "Clarity & Precision: Use straightforward everyday language to break down complex concepts into digestible parts. This is the first time user is reading about this topic. All technical jargon has to be explained in layman terms."
+        , "General Knowledge : Primarily India focused and limited to very popular international themes"
+      ]
+      , "inputs":[
+        "You are provided with either a concept or solutions essays from India UPSC exam curriculum."
+        , "Essays are organized across concept sections."
       ]
     },
     "instructions": {
-      "examples": [
-        "Identify only one highly relevant, everyday and simple example theme.",
-        "Develop engaging examples that evolve across different sections of the textbook chapter.",
-        "Ensure a one-to-one mapping between example elements and the textbook's concepts and ideas so that the reader can understand the chapter's essence by just reading the examples.",
-        "Use simple, accessible language throughout.",
-        "Prioritize Indian pop culture references where appropriate to make the examples relatable for Indian aspirants aged 20-30.",
-        "Avoid any inclusion of sensitive, religious, or political themes."
-        ,"Only generate narrative examples for concept-driven topics that benefit from a storytelling approach (e.g., Pythagoras theorem, bond yields, budget deficits, or relationships between administrative functions like federal and state bodies)."
-        , "Do not generate example stories for fact-driven or purely historical topics (e.g., Quit India movement, Chola Empire) where narrative examples would not enhance conceptual understanding."
-      ],
-      "mathematical_diagrams": [
-        "Keep the descriptions simple and straightforward."
-        , "Generate verified and comprehensive SVG code to create the diagrams including all the data needed."
-        , "Do not recommend mathematical diagrams for abstract, non-math, or non-data concepts better captured through simple images."
-      ],
-      "images": [
-        "Provide simple image generation prompts with a single focal subject per image.",
-        "Do not recommend images for mathematical concepts that can be better explained through mathematical diagrams and plots."
-      ]
-      , "layout_diagrams":[
-        "Use only for complex concepts with heirarchial/process/sequential/comparison dimensions among multiple components."
-        , "Keep the descriptions simple and straight-forward."
-        , "Generate verified and comphrensive SVG code to create the diagrams including all the data needed."
+        "examples":[
+            "Choose a single example theme from Indian pop culture."
+            , "Write straightforward, relevant, creative, funny and engaging example stories for each section or concept in the input essay."
+            , "Use simple non-technical language"
+            , "Ensure there is a one-to-one mapping between the concept details and the story elements. User should be able to understand the concepts by reading through the examples alone."
+            , "Keep the chosen example theme consistent and evolve it across the concepts."
+            , "For any data driven examples, generate detailed data points and computational steps."
+        ]
+        , "visualizations": {
+            "images": [
+                "If any concept can be explained better through an simple image, generate key words describing the image"
+                , "DO NOT recommend a complex image with more than one subject (e.g. diagram, flow chart etc)."
+            ]
+            , "mathematical_diagrams":[
+                "If any concept can be explained better through any of the below diagrams, generate detailed descriptions with accurate data sets/co-ordinates."
+                , {
+                    "diagrams": [
+                          {
+                            "name": "Line Chart",
+                            "description": "Displays trends by connecting data points with a continuous line.",
+                            "category": "Data Visualization",
+                            "example": "Plotting monthly rainfall amounts."
+                          },
+                          {
+                            "name": "Bar Chart",
+                            "description": "Represents categorical data with rectangular bars whose lengths are proportional to values.",
+                            "category": "Data Visualization",
+                            "example": "Comparing literacy rates across states."
+                          },
+                          {
+                            "name": "Pie Chart",
+                            "description": "Divides a circle into sectors to show proportions of a whole.",
+                            "category": "Data Visualization",
+                            "example": "Illustrating the percentage share of different subjects in an exam."
+                          },
+                          {
+                            "name": "Histogram",
+                            "description": "Displays the frequency distribution of continuous data using adjacent bars.",
+                            "category": "Statistics/Data Analysis",
+                            "example": "Analyzing the distribution of students’ marks."
+                          },
+                          {
+                            "name": "Scatter Plot",
+                            "description": "Plots individual data points on a Cartesian plane to reveal correlations between two variables.",
+                            "category": "Data Visualization",
+                            "example": "Correlating study hours with exam scores."
+                          },
+                          {
+                            "name": "Triangle",
+                            "description": "A three-sided polygon used to study angles and side relationships.",
+                            "category": "Geometry",
+                            "example": "Applying the Pythagorean theorem in a right triangle."
+                          },
+                          {
+                            "name": "Circle",
+                            "description": "A set of points equidistant from a center, fundamental for studying curves and circular properties.",
+                            "category": "Geometry",
+                            "example": "Calculating the circumference and area of a circle."
+                          },
+                          {
+                            "name": "Square",
+                            "description": "A quadrilateral with equal sides and right angles, ideal for exploring symmetry and area.",
+                            "category": "Geometry",
+                            "example": "Determining the perimeter and area of a square in mensuration problems."
+                          },
+                          {
+                            "name": "Rectangle",
+                            "description": "A four-sided figure with opposite sides equal and all angles right, common in coordinate geometry.",
+                            "category": "Geometry",
+                            "example": "Finding the area of a plot represented as a rectangle."
+                          },
+                          {
+                            "name": "Parallelogram",
+                            "description": "A quadrilateral with parallel opposite sides, useful in vector and area problems.",
+                            "category": "Geometry",
+                            "example": "Computing area using base and height."
+                          },
+                          {
+                            "name": "Trapezoid (Trapezium)",
+                            "description": "A four-sided figure with one pair of parallel sides, often used in mensuration.",
+                            "category": "Geometry",
+                            "example": "Calculating area by averaging the lengths of the two bases."
+                          },
+                          {
+                            "name": "Venn Diagram",
+                            "description": "Uses overlapping circles (or other shapes) to illustrate relationships and commonalities between sets.",
+                            "category": "Set Theory/Logic",
+                            "example": "Visualizing the overlap between different subject groups in a syllabus."
+                          },
+                          {
+                            "name": "Tree Diagram",
+                            "description": "A branching diagram that maps all possible outcomes or decision paths.",
+                            "category": "Probability/Combinatorics",
+                            "example": "Outlining various paths in a multi-stage selection process."
+                          },
+                          {
+                            "name": "Flowchart",
+                            "description": "Represents a process or algorithm using standardized symbols and arrows.",
+                            "category": "Process/Logic",
+                            "example": "Detailing the steps of a problem-solving method."
+                          },
+                          {
+                            "name": "Network Diagram",
+                            "description": "Illustrates relationships and interconnections between various nodes or entities.",
+                            "category": "Graph Theory/Data Visualization",
+                            "example": "Mapping dependencies among different UPSC subjects."
+                          },
+                          {
+                            "name": "Sine Wave Diagram",
+                            "description": "Graphically represents the periodic oscillation of the sine function.",
+                            "category": "Trigonometry",
+                            "example": "Plotting the sine curve to study wave patterns."
+                          },
+                          {
+                            "name": "Coordinate Plane",
+                            "description": "A two-dimensional grid for plotting algebraic equations and functions.",
+                            "category": "Algebra/Graphing",
+                            "example": "Graphing a quadratic function like y = x²."
+                          }
+                        ]
+                    }
+                ]
+            }
+        , "concepts_to_be_assessed": [
+            "List maximum of 3 core themes per section in input essay in which user understanding has to be assessed."
+            , "DO NOT generate any questions."
+        ]
+      , "general":[
+        "DO NOT add any new explanations or solution steps even if user explicitly asked for them."
+        , "Response should adhere to the provided schema."
     ]
-    , "example_mathematical_solutions":[
-        "Use only for math or data related examples."
-        , "Provide detailed data and solution steps needed to support an example concept."
-        , "Verify the accuracy of the solution steps, answer and final conclusion."
-    ]
-      , "svg_code_snippet":[
-        "Generate a human readable SVG code as a raw multiline string inside the value field — do not escape quotes or newlines. Use backticks (```) to wrap the SVG content so it's human-readable, even if the result is not valid strict JSON"
-        , " The SVG must be included as a **raw multiline string**, using triple backticks (```svg ... ```)."
-        , "**Do NOT escape** quotes, slashes, or newlines in the SVG."
-        , "The goal is for the SVG code to look like it was written directly by a human — clean, readable, and properly indented."
-        , "The JSON output does NOT need to be strictly valid — human readability is more important than machine-parsed validity."
-        , "There must be no overlaps between diagram elements. Text labels must not intersect or cover lines or shapes. Adjust positions and add padding to ensure legibility.",
-    "All mathematical notations must be clearly shown: right angles as squares, other angles as arcs labeled with Greek letters or degrees, and key points labeled with capital letters (e.g., A, B, C).",
-    "Use semantic grouping (<g> tags) to logically cluster related diagram components (e.g., a triangle, angle labels, or axes).",
-    "Text labels should be positioned close to associated elements but not touching them.",
-    "Use clean, well-indented SVG with defined width, height, and viewBox for consistency."
-    ]
-    , "general": [
-        "Do not directly refer to 'UPSC exam preparation'.",
-        "Maintain clarity, precision, and factual correctness throughout. Present all formulae in LaTeX.",
-        "Do not add extra examples beyond the specified instructions.",
-        "Do not create visuals yourself; only provide recommendations for visualizations.",
-        "Avoid any sensitive, religious, or political themes.",
-        "Adhere strictly to the provided response structure schema."
-      ]
-    }
-  }
-  """,
+}
+}""",
 "response_schema":{
-  "name": "examples_schema",
+  "name": "example_theme_schema",
   "strict": True,
   "schema": {
     "type": "object",
+    "required": [
+      "example_theme",
+      "section_wise_content"
+    ],
     "properties": {
       "example_theme": {
         "type": "string",
-        "description": "Chosen example theme."
+        "description": "Short description of the chosen example theme."
       },
-      "examples": {
+      "section_wise_content": {
         "type": "array",
-        "description": "List of textbook chapter section wise examples.",
         "items": {
           "type": "object",
+          "required": [
+            "section_title_from_input_essay",
+            "llm_friendly_formatted_example_story",
+            "visualizations",
+            "concepts_to_be_assessed"
+          ],
           "properties": {
-            "textbook_chapter_section_title": {
-              "type": "string",
-              "description": "Specific textbook chapter section title."
-            },
-            "concept_from_textbook_chapter": {
-              "type": "string",
-              "description": "Specific concept from the input textbook chapter."
-            },
-            "is_concept_math_or_data_related": {
-              "type": "boolean",
-              "description": "Boolean flag whether the example is math or data related."
-            },
-            "example_text": {
-              "type": "string",
-              "description": "Detailed example story for this specific concept."
-            },
-            "is_better_with_example_mathematical_solution": {
-              "type": "boolean",
-              "description": "Boolean flag whether the example is better with a mathematical solution."
-            },
-            "example_mathematical_problem_statement_with_data": {
-              "type": "string",
-              "description": "Detailed problem statement with data to support this example if mathematical solution is relevant."
-            },
-            "example_mathematical_problem_solution_steps": {
-              "type": "string",
-              "description": "Detailed solution steps including proof of final answer, if mathematical solution is relevant."
-            },
-            "is_better_with_visualization": {
-              "type": "boolean",
-              "description": "Boolean flag whether the example is better with a visualization."
-            },
-            "visualization": {
-              "type": "object",
-              "description": "Visualization details.",
-              "properties": {
-                "visualization_type": {
-                  "type": "array",
-                  "description": "Pick one from the list.",
-                  "items": {
+            "visualizations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "concept",
+                  "images",
+                  "mathematical_diagrams"
+                ],
+                "properties": {
+                  "images": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "image",
+                        "keywords"
+                      ],
+                      "properties": {
+                        "image": {
+                          "type": "string",
+                          "description": "Short image description."
+                        },
+                        "keywords": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          },
+                          "description": "List of 1 or more keywords."
+                        }
+                      },
+                      "additionalProperties": False
+                    },
+                    "description": "List of images descriptions and keywords."
+                  },
+                  "concept": {
                     "type": "string",
-                    "enum": [
-                      "mathematical_diagram",
-                      "image",
-                      "layout_diagram"
-                    ]
+                    "description": "Concept from the section."
+                  },
+                  "mathematical_diagrams": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "decription",
+                        "data"
+                      ],
+                      "properties": {
+                        "data": {
+                          "type": "string",
+                          "description": "Exhaustive data needed for this diagram to be rendered."
+                        },
+                        "type": {
+                          "enum": [
+                            "Line Chart",
+                            "Bar Chart",
+                            "Pie Chart",
+                            "Histogram",
+                            "Scatter Plot",
+                            "Triangle",
+                            "Circle",
+                            "Square",
+                            "Rectangle",
+                            "Parallelogram",
+                            "Trapezoid",
+                            "Venn Diagram",
+                            "Tree Diagram",
+                            "Flowchart",
+                            "Network Diagram",
+                            "Sine Wave Diagram",
+                            "Coordinate Plane"
+                          ],
+                          "type": "string",
+                          "description": 'Select one from the provided list'
+                        },
+                        "decription": {
+                          "type": "string",
+                          "description": "Detailed description."
+                        }
+                      },
+                      "additionalProperties": False
+                    },
+                    "description": "List of detailed mathematical diagram descriptions."
                   }
                 },
-                "visualization": {
-                  "type": "array",
-                  "description": "Pick only one from the below.",
-                  "items": {
-                    "anyOf": [
-                      {
-                        "type": "object",
-                        "properties": {
-                          "mathematical_diagram": {
-                            "type": "object",
-                            "properties": {
-                              "description": {
-                                "type": "string",
-                                "description": "Detailed description of diagram and data."
-                              },
-                              "type": {
-                                "type": "array",
-                                "description": "Pick one from the list.",
-                                "items": {
-                                  "type": "string",
-                                  "enum": [
-                                    "Line Chart",
-                                    "Bar Chart",
-                                    "Pie Chart",
-                                    "Histogram",
-                                    "Scatter Plot",
-                                    "Triangle",
-                                    "Circle",
-                                    "Square",
-                                    "Rectangle",
-                                    "Parallelogram",
-                                    "Trapezoid",
-                                    "Venn Diagram",
-                                    "Tree Diagram",
-                                    "Sine Wave Diagram",
-                                    "Coordinate Plane"
-                                  ]
-                                }
-                              },
-                              "human_readable_svg_code": {
-                                "type": "string",
-                                "description": "Human readable SVG code."
-                              },
-                              "how_are_overlaps_avoided": {
-                                "type": "string",
-                                "description": "Explanation of how overlap between different elements is avoided."
-                              },
-                              "how_is_diagram_verified": {
-                                "type": "string",
-                                "description": "Explanation of how diagram is verified."
-                              }
-                            },
-                            "required": [
-                              "description",
-                              "type",
-                              "human_readable_svg_code",
-                              "how_are_overlaps_avoided",
-                              "how_is_diagram_verified"
-                            ],
-                            "additionalProperties": False
-                          }
-                        },
-                        "required": [
-                          "mathematical_diagram"
-                        ],
-                        "additionalProperties": False
-                      },
-                      {
-                        "type": "object",
-                        "properties": {
-                          "image": {
-                            "type": "object",
-                            "properties": {
-                              "prompt": {
-                                "type": "string",
-                                "description": "Very specific and detailed image generation prompt."
-                              }
-                            },
-                            "required": [
-                              "prompt"
-                            ],
-                            "additionalProperties": False
-                          }
-                        },
-                        "required": [
-                          "image"
-                        ],
-                        "additionalProperties": False
-                      },
-                      {
-                        "type": "object",
-                        "properties": {
-                          "layout_diagram": {
-                            "type": "object",
-                            "properties": {
-                              "description": {
-                                "type": "string",
-                                "description": "Detailed description of layout_diagram and data."
-                              },
-                              "type": {
-                                "type": "array",
-                                "description": "Pick one from the list.",
-                                "items": {
-                                  "type": "string",
-                                  "enum": [
-                                    "Table",
-                                    "Flowchart",
-                                    "Network Diagram"
-                                  ]
-                                }
-                              },
-                              "human_readable_svg_code": {
-                                "type": "string",
-                                "description": "Human readable SVG code."
-                              },
-                              "how_are_overlaps_avoided": {
-                                "type": "string",
-                                "description": "Explanation of how overlap between different elements is avoided."
-                              },
-                              "how_is_diagram_verified": {
-                                "type": "string",
-                                "description": "Explanation of how diagram is verified."
-                              }
-                            },
-                            "required": [
-                              "description",
-                              "type",
-                              "human_readable_svg_code",
-                              "how_are_overlaps_avoided",
-                              "how_is_diagram_verified"
-                            ],
-                            "additionalProperties": False
-                          }
-                        },
-                        "required": [
-                          "layout_diagram"
-                        ],
-                        "additionalProperties": False
-                      }
-                    ]
-                  }
-                }
+                "additionalProperties": False
               },
-              "required": [
-                "visualization_type",
-                "visualization"
-              ],
-              "additionalProperties": False
+              "description": "List of images or mathematical diagrams."
+            },
+            "concepts_to_be_assessed": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "List of concepts in which student has to be assessed."
+            },
+            "section_title_from_input_essay": {
+              "type": "string",
+              "description": "Section title."
+            },
+            "llm_friendly_formatted_example_story": {
+              "type": "string",
+              "description": "Straightforward, relevant, creative, funny and engaging example story in LLM friendly format."
             }
           },
-          "required": [
-            "textbook_chapter_section_title",
-            "concept_from_textbook_chapter",
-            "is_concept_math_or_data_related",
-            "example_text",
-            "is_better_with_example_mathematical_solution",
-            "example_mathematical_problem_statement_with_data",
-            "example_mathematical_problem_solution_steps",
-            "is_better_with_visualization",
-            "visualization"
-          ],
           "additionalProperties": False
-        }
+        },
+        "description": "Organized examples, visualizations, and assessment questions as per the sections in input essay."
       }
     },
-    "required": [
-      "example_theme",
-      "examples"
-    ],
     "additionalProperties": False
   }
 }

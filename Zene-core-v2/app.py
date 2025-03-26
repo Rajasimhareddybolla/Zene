@@ -7,6 +7,9 @@ import time
 import logging
 from main import Mioo
 from dotenv import load_dotenv
+import plotly.express as px
+import plotly.graph_objects as go
+import numpy as np
 
 # Load environment variables
 load_dotenv()
@@ -304,20 +307,237 @@ if st.session_state.show_sidebar:
         with tabs[2]:
             st.subheader("Token Usage Statistics")
             
-            # Collect token usage data - simplified for direct Mioo integration
-            st.info("Token usage tracking is available in automatic mode")
-            
+            # Collect token usage data from conversation agent
             if st.session_state.conversation_agent:
-                usage_data = []
+                
+                # Extract token usage data from all agents
+                all_token_data = []
+                current_chat_data = []
+                total_tokens_used = 0
+                total_prompt_tokens = 0
+                total_completion_tokens = 0
+                
+                # Track current chat token usage
+                current_chat_tokens = 0
+                current_chat_prompt_tokens = 0
+                current_chat_completion_tokens = 0
+                
+                for agent_type in ["zene", "commet", "finn", "milo", "thalia", "mara", "inka"]:
+                    if agent_type in st.session_state.conversation_agent.output_histories:
+                        history = st.session_state.conversation_agent.output_histories[agent_type]
+                        
+                        # Track if we've found items for the current chat
+                        current_chat_found = False
+                        
+                        # Process each history item with token usage
+                        for item in history:
+                            if "usage" in item and isinstance(item["usage"], dict):
+                                usage = item["usage"]
+                                # Extract timestamp or use current time if not available
+                                timestamp = item.get("timestamp", time.time())
+                                if isinstance(timestamp, (int, float)):
+                                    timestamp = datetime.fromtimestamp(timestamp)
+                                else:
+                                    timestamp = datetime.now()
+                                    
+                                # Format timestamp
+                                formatted_time = timestamp.strftime("%H:%M:%S")
+                                
+                                # Extract token counts
+                                prompt_tokens = usage.get("prompt_tokens", 0)
+                                completion_tokens = usage.get("completion_tokens", 0)
+                                total_item_tokens = usage.get("total_tokens", prompt_tokens + completion_tokens)
+                                model = usage.get("model", "unknown")
+                                
+                                # Check if this is from the current chat (most recent item for each agent)
+                                # We identify the current chat as the most recent interactions across all agents
+                                time_threshold = time.time() - 300  # Items in the last 5 minutes are considered current chat
+                                if timestamp.timestamp() > time_threshold:
+                                    current_chat_tokens += total_item_tokens
+                                    current_chat_prompt_tokens += prompt_tokens
+                                    current_chat_completion_tokens += completion_tokens
+                                    current_chat_found = True
+                                    
+                                    # Add to current chat dataset
+                                    current_chat_data.append({
+                                        "agent": agent_type,
+                                        "timestamp": formatted_time,
+                                        "prompt_tokens": prompt_tokens,
+                                        "completion_tokens": completion_tokens,
+                                        "total_tokens": total_item_tokens,
+                                        "model": model
+                                    })
+                                
+                                # Update totals for all time
+                                total_tokens_used += total_item_tokens
+                                total_prompt_tokens += prompt_tokens
+                                total_completion_tokens += completion_tokens
+                                
+                                # Add to all data dataset
+                                all_token_data.append({
+                                    "agent": agent_type,
+                                    "timestamp": formatted_time,
+                                    "prompt_tokens": prompt_tokens,
+                                    "completion_tokens": completion_tokens,
+                                    "total_tokens": total_item_tokens,
+                                    "model": model
+                                })
+                
+                
+                
+                # 1. DISPLAY CURRENT CHAT STATISTICS FIRST
+                st.markdown("### Current Chat Token Usage")
+                if current_chat_data:
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        st.metric("Total Tokens", f"{current_chat_tokens:,}")
+                    with col2:
+                        st.metric("Input Tokens", f"{current_chat_prompt_tokens:,}")
+                    with col3:
+                        st.metric("Output Tokens", f"{current_chat_completion_tokens:,}")
+                    
+                    # Show current chat agent breakdown
+                    if len(current_chat_data) > 0:
+                        current_df = pd.DataFrame(current_chat_data)
+                        
+                        # Group by agent for the current chat
+                        current_agent_usage = current_df.groupby("agent").agg({
+                            "prompt_tokens": "sum", 
+                            "completion_tokens": "sum",
+                            "total_tokens": "sum"
+                        }).reset_index()
+                        
+                        # Plot token usage by agent for current chat
+                        fig = px.bar(
+                            current_agent_usage, 
+                            x="agent", 
+                            y=["prompt_tokens", "completion_tokens"],
+                            title="Current Chat: Token Usage by Agent",
+                            labels={"value": "Tokens", "agent": "Agent", "variable": "Token Type"},
+                            color_discrete_map={"prompt_tokens": "#2ca02c", "completion_tokens": "#d62728"}
+                        )
+                        fig.update_layout(legend_title_text="Token Type")
+                        st.plotly_chart(fig, use_container_width=True)
+                        
+                        # Show detailed table for current chat
+                        with st.expander("Current Chat Details", expanded=False):
+                            st.dataframe(
+                                current_df.sort_values("timestamp", ascending=False),
+                                use_container_width=True,
+                                hide_index=True
+                            )
+                else:
+                    st.info("No token data available for the current chat.")
+                
+                # 2. HISTORICAL DATA VISUALIZATIONS
+                if all_token_data:
+                    st.markdown("---")
+                    st.markdown("### Historical Token Usage")
+                    
+                    df = pd.DataFrame(all_token_data)
+                    st.markdown("---")
+                    st.markdown("### Total Token Usage (All Time)")
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        st.metric("Total Tokens Used", f"{total_tokens_used:,}")
+                    with col2:
+                        st.metric("Total Input Tokens", f"{total_prompt_tokens:,}")
+                    with col3:
+                        st.metric("Total Output Tokens", f"{total_completion_tokens:,}")
+                    # Token usage by agent
+                    agent_usage = df.groupby("agent").agg({
+                        "prompt_tokens": "sum", 
+                        "completion_tokens": "sum", 
+                        "total_tokens": "sum"
+                    }).reset_index()
+                    
+                    # Plot token usage by agent using Plotly
+                    fig = px.bar(
+                        agent_usage, 
+                        x="agent", 
+                        y=["prompt_tokens", "completion_tokens"],
+                        title="Token Usage by Agent (All Time)",
+                        labels={"value": "Tokens", "agent": "Agent", "variable": "Token Type"},
+                        color_discrete_map={"prompt_tokens": "#1f77b4", "completion_tokens": "#ff7f0e"}
+                    )
+                    fig.update_layout(legend_title_text="Token Type")
+                    st.plotly_chart(fig, use_container_width=True)
+                    
+                    # Token usage by model if multiple models exist
+                    if len(df["model"].unique()) > 1:
+                        model_usage = df.groupby("model").agg({
+                            "prompt_tokens": "sum", 
+                            "completion_tokens": "sum", 
+                            "total_tokens": "sum"
+                        }).reset_index()
+                        
+                        fig = px.pie(
+                            model_usage, 
+                            values="total_tokens", 
+                            names="model",
+                            title="Token Distribution by Model (All Time)",
+                            hole=0.3
+                        )
+                        st.plotly_chart(fig, use_container_width=True)
+                    
+                    # Timeline of token usage (for recent interactions)
+                    last_n = min(10, len(df))  # Show at most last 10 interactions
+                    recent_data = df.iloc[-last_n:].copy()
+                    
+                    st.subheader(f"Recent Token Usage Timeline (Last {last_n} interactions)")
+                    fig = px.line(
+                        recent_data,
+                        x="timestamp", 
+                        y="total_tokens",
+                        color="agent",
+                        markers=True,
+                        title="Token Usage Over Time"
+                    )
+                    fig.update_layout(xaxis_title="Time", yaxis_title="Total Tokens")
+                    st.plotly_chart(fig, use_container_width=True)
+                    
+                    # Show detailed token usage data in an expandable table
+                    with st.expander("Detailed Token Usage Data (All Time)", expanded=False):
+                        st.dataframe(
+                            df.sort_values("timestamp", ascending=False),
+                            use_container_width=True,
+                            hide_index=True
+                        )
+                
+                # 3. DISPLAY TOTAL STATISTICS AT THE BOTTOM
+
                 
                 # Display agent usage stats
-                st.subheader("Agent Usage")
+                st.markdown("---")
+                st.subheader("Agent Interaction Count")
                 
-                for agent_type in ["zene", "commet", "finn", "milo", "thalia"]:
-                    if st.session_state.conversation_agent.output_histories.get(agent_type):
-                        st.write(f"**{agent_type.capitalize()}**: {len(st.session_state.conversation_agent.output_histories[agent_type])} interactions")
+                agent_counts = {}
+                for agent_type in ["zene", "commet", "finn", "milo", "thalia", "mara", "inka"]:
+                    if agent_type in st.session_state.conversation_agent.output_histories:
+                        count = len(st.session_state.conversation_agent.output_histories[agent_type])
+                        agent_counts[agent_type] = count
+                
+                if agent_counts:
+                    # Create a horizontal bar chart for agent usage count
+                    fig = go.Figure(go.Bar(
+                        y=list(agent_counts.keys()),
+                        x=list(agent_counts.values()),
+                        orientation='h',
+                        marker=dict(
+                            color=['rgba(25, 125, 225, 0.6)' if x != max(agent_counts.values()) 
+                                  else 'rgba(225, 50, 50, 0.6)' for x in agent_counts.values()]
+                        )
+                    ))
+                    fig.update_layout(
+                        title="Number of Interactions by Agent",
+                        xaxis_title="Interaction Count",
+                        yaxis_title="Agent"
+                    )
+                    st.plotly_chart(fig, use_container_width=True)
+                else:
+                    st.info("No agent interaction data available yet.")
             else:
-                st.info("No token usage data available yet.")
+                st.info("No token usage data available yet. Start a conversation to see token usage statistics.")
 
 # Footer
 st.markdown("---")

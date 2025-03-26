@@ -883,7 +883,7 @@ class Mioo:
                     rag_responses,
                     user_intent
                 )
-                if zene_response["next_agent"] != "commet"  and success:
+                if zene_response["next_agent"].lower() != "commet"  and success:
                     # Run Mara and Inka agents in parallel using asyncio tasks
                     async def get_agent_responses():
                         # Create tasks to run agents concurrently
